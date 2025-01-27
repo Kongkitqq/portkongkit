@@ -1,0 +1,120 @@
+/* สไตล์สำหรับส่วนหลักของโปรเจกต์ */
+.project-section {
+    background-color: #f9f9f9; /* สีพื้นหลังอ่อน */
+    padding: 2rem; /* ระยะห่างภายใน */
+    border-radius: 10px; /* มุมโค้งมน */
+    max-width: 800px; /* ความกว้างสูงสุด */
+    margin: 2rem auto; /* จัดให้อยู่ตรงกลาง */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
+  }
+  
+  /* สไตล์สำหรับชื่อหัวข้อโปรเจกต์ */
+  .projectTitle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333; /* สีเทาเข้ม */
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* สไตล์สำหรับคอนเทนเนอร์ของโปรเจกต์ */
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* ระยะห่างระหว่างโปรเจกต์ */
+  }
+  
+  /* สไตล์สำหรับแต่ละโปรเจกต์ */
+  .project-list {
+    background-color: #fff; /* สีพื้นหลังขาว */
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* สไตล์สำหรับชื่อโปรเจกต์ */
+  .project-list h3 {
+    font-size: 1.8rem;
+    color: #007bff; /* สีฟ้า */
+    margin-bottom: 0.5rem;
+  }
+  
+  /* สไตล์สำหรับคำอธิบายโปรเจกต์ */
+  .project-list p {
+    font-size: 1rem;
+    color: #555; /* สีเทาเข้ม */
+    line-height: 1.6;
+  }
+  
+  /* สไตล์สำหรับรายการเทคโนโลยีที่ใช้ */
+  .project-list ul {
+    list-style-type: none; /* เอาเครื่องหมายจุดออก */
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .project-list ul li {
+    font-size: 1rem;
+    color: #555; /* สีเทาเข้ม */
+    line-height: 1.6;
+  }
+  
+  /* สไตล์สำหรับลิงก์ */
+  .project-links {
+    margin-top: 1rem;
+  }
+  
+  .project-links a {
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1rem;
+    color: #007bff; /* สีฟ้า */
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .project-links a:hover {
+    color: #0056b3; /* สีฟ้าเข้มเมื่อโฮเวอร์ */
+  }
+  
+  /* เอฟเฟกต์เมื่อโฮเวอร์ที่โปรเจกต์ */
+  .project-list:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  /* สไตล์สำหรับปุ่มทั่วไป */
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* สไตล์สำหรับปุ่ม Report */
+  .report-btn {
+    background-color: #f8d7da; /* สีแดงอ่อน */
+    color: #721c24; /* สีแดงเข้มสำหรับข้อความ */
+    border: 1px solid #f5c6cb;
+  }
+  
+  .report-btn:hover {
+    background-color: #f5c6cb; /* สีแดงเข้มขึ้นเมื่อโฮเวอร์ */
+  }
+  
+  /* สไตล์สำหรับปุ่ม GitHub */
+  .github-btn {
+    background-color: #e2e3e5; /* สีเทาอ่อน */
+    color: #383d41; /* สีเทาเข้มสำหรับข้อความ */
+    border: 1px solid #d6d8db;
+  }
+  
+  .github-btn:hover {
+    background-color: #d6d8db; /* สีเทาเข้มขึ้นเมื่อโฮเวอร์ */
+  }
+  

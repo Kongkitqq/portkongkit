@@ -1,0 +1,53 @@
+.skills-section {
+    border-radius: 10px; /* มุมโค้งมน */
+    padding: 2rem; /* ระยะห่างภายใน */
+    max-width: 70rem; /* จำกัดความกว้าง */
+    margin: 0.1rem auto; /* จัดให้อยู่ตรงกลาง */
+    color: #ffffff; /* สีข้อความ */
+  }
+  
+  .skillsTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff; /* สีฟ้าสดใส */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
+  }
+  
+  .skills-container {
+    display: flex; /* ใช้ Flexbox */
+    justify-content: space-between; /* จัดให้ห่างซ้าย-ขวา */
+    gap: 2rem; /* ระยะห่างระหว่างคอลัมน์ */
+  }
+  
+  .skills-list, .software-list {
+    width: 45%; /* แบ่งพื้นที่ครึ่งหนึ่ง */
+  }
+  
+  .skills-heading {
+    font-size: 1.4rem;
+    color: #ffffff;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 0.5rem;
+  }
+  
+  .skills-items {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1rem;
+  }
+  
+  .skills-item {
+    margin-bottom: 0.8rem;
+    line-height: 1.0;
+    color: #dddddd;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .skills-item:hover {
+    color: #007bff;
+    transform: translateX(5px);
+  }

@@ -1,0 +1,82 @@
+
+#Name{
+    height: calc(100vh-4rem);
+    width: 100vw;
+    max-width: 70rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.Kyai{
+    font-size: 4rem;
+    font-weight: bold;
+    color: #3ABEF9;
+}
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 8px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    text-decoration: none; /* เอาเส้นใต้ในลิงก์ออก */
+  }
+  
+  .btn a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3;
+  }
+  .content-container {
+    display: flex; /* ใช้ Flexbox เพื่อจัดตำแหน่ง */
+    align-items: center; /* จัดแนวให้อยู่ตรงกลางแนวตั้ง */
+    justify-content: space-between; /* แยกเนื้อหาและรูปภาพให้อยู่ซ้าย-ขวา */
+    padding: 2rem;
+  }
+  
+  .text-content {
+    max-width: 74%; /* จำกัดความกว้างของเนื้อหา */
+    color: white;
+  }
+  
+  .image-container {
+    max-width: 30%; /* จำกัดความกว้างของรูปภาพ */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-picture {
+    width: 150px; /* ขนาดรูปภาพ */
+    height: 150px; /* ขนาดรูปภาพ */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    object-fit: cover; /* ครอบตัดรูปภาพให้พอดี */
+    border: 3px solid rgb(235, 235, 235); /* ขอบขาวรอบรูป */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* เพิ่มเงา */
+  }
+  .homePara{
+    font-size:1.1rem;
+  }
+  .homeName{
+    font-size: 1.5rem;
+    font-weight: bold;
+  
+  }
+  @media  screen and(max-width: 768px){
+    .content-container{
+      flex-direction: column;
+    }
+    .text-content{
+      max-width: 100%;
+    }
+    .image-container{
+      max-width: 100%;
+    }
+    
+  }
