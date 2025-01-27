@@ -1,14 +1,12 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    text-decoration: none;
-    background: transparent;
-    
-}
-body{
-    background: #181818		;
-    color: #ECF0F1		;
-    overflow: hidden;
-    overflow-y: scroll;
-}
+  }
+  
+  body {
+    background-color: #181818; /* ใช้ background-color */
+    color: #ECF0F1; /* สีข้อความ */
+    font-family: Arial, sans-serif; /* เพิ่ม font-family */
+  }
+  
