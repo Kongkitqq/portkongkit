@@ -68,15 +68,20 @@
     font-weight: bold;
   
   }
-  @media  screen and(max-width: 768px){
-    .content-container{
-      flex-direction: column;
+  @media screen and (max-width: 768px) {
+    .content-container {
+      flex-direction: column; /* จัดเรียงเป็นแนวตั้ง */
     }
-    .text-content{
-      max-width: 100%;
+    .text-content {
+      max-width: 100%; /* ขยายความกว้างเต็มหน้าจอ */
+      text-align: center; /* จัดข้อความให้อยู่ตรงกลาง */
     }
-    .image-container{
-      max-width: 100%;
+    .image-container {
+      max-width: 100%; /* ขยายรูปภาพ */
+      margin-top: 1rem; /* เพิ่มระยะห่างด้านบน */
     }
-    
+    .profile-picture {
+      width: 120px; /* ลดขนาดรูป */
+      height: 120px;
+    }
   }

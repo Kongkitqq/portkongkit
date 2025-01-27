@@ -117,4 +117,21 @@
   .github-btn:hover {
     background-color: #d6d8db; /* สีเทาเข้มขึ้นเมื่อโฮเวอร์ */
   }
-  
+  @media screen and (max-width: 768px) {
+    .project-section {
+      padding: 1rem;
+    }
+    .projectTitle {
+      font-size: 2rem;
+    }
+    .project-container {
+      gap: 1rem;
+    }
+    .project-list {
+      padding: 1rem;
+    }
+    .btn {
+      padding: 0.5rem 0.8rem;
+      font-size: 0.9rem;
+    }
+  }

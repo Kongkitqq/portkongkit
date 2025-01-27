@@ -51,3 +51,13 @@
     color: #007bff;
     transform: translateX(5px);
   }
+  @media screen and (max-width: 768px) {
+    .skills-container {
+      flex-direction: column; /* เปลี่ยนจากแถวเป็นคอลัมน์ */
+      gap: 1rem; /* ลดระยะห่าง */
+    }
+    .skills-list, .software-list {
+      width: 100%; /* ใช้พื้นที่เต็ม */
+    }
+  }
+  
