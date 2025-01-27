@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/portkongkit/static/css/main.cef8c8de.css",
+    "main.css": "/portkongkit/static/css/main.53f39207.css",
     "main.js": "/portkongkit/static/js/main.99087ef8.js",
     "static/media/Resume_Kongkit Yeesai.pdf": "/portkongkit/static/media/Resume_Kongkit Yeesai.1c42177b5272926fb95f.pdf",
     "static/media/profile.png": "/portkongkit/static/media/profile.67a631d8547874784421.png",
     "index.html": "/portkongkit/index.html",
-    "main.cef8c8de.css.map": "/portkongkit/static/css/main.cef8c8de.css.map",
+    "main.53f39207.css.map": "/portkongkit/static/css/main.53f39207.css.map",
     "main.99087ef8.js.map": "/portkongkit/static/js/main.99087ef8.js.map"
   },
   "entrypoints": [
-    "static/css/main.cef8c8de.css",
+    "static/css/main.53f39207.css",
     "static/js/main.99087ef8.js"
   ]
 }
