@@ -1,4 +1,4 @@
-.skills-section {
+.about-section {
     border-radius: 10px; /* มุมโค้งมน */
     padding: 2rem; /* ระยะห่างภายใน */
     max-width: 80%; /* จำกัดความกว้าง */
@@ -7,26 +7,26 @@
     box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงา */
   }
   
-  .skillsTitle {
+  .aboutTitle {
     font-size: 2rem;
     font-weight: bold;
     color: #007bff; /* สีฟ้าสดใส */
-    text-align: center; /* จัดให้อยู่ตรงกลาง */
-    margin-bottom: 1.5rem;
+    text-align: left; /* จัดให้อยู่ตรงกลาง */
+    margin-bottom: 0.1rem;
     text-transform: uppercase; /* ตัวพิมพ์ใหญ่ */
   }
   
-  .skills-container {
-    display: flex; /* ใช้ Flexbox */
-    justify-content: space-between; /* จัดให้ห่างซ้าย-ขวา */
-    gap: 2rem; /* ระยะห่างระหว่างคอลัมน์ */
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
   }
   
-  .skills-list, .software-list {
-    width: 45%; /* แบ่งพื้นที่ครึ่งหนึ่ง */
+  .about-details, .contact-info {
+    width: 45%;
   }
   
-  .skills-heading {
+  .about-heading {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -35,29 +35,35 @@
     padding-bottom: 0.5rem;
   }
   
-  .skills-items {
+  .about-items {
     list-style-type: none;
     padding: 0;
     font-size: 1.1rem;
   }
   
-  .skills-item {
-    margin-bottom: 2rem;
-    line-height: 1.0;
+  .about-item {
+    margin-bottom: 1rem;
+    line-height: 1.5;
     color: #dddddd;
     transition: color 0.3s ease, transform 0.3s ease;
+
   }
-  
-  .skills-item:hover {
+  .about-items a {
+    color: inherit; /* ใช้สีเดียวกับข้อความปกติ */
+    text-decoration: none; /* ลบขีดเส้นใต้ */
+    transition: color 0.3s ease;
+  }
+  .about-item:hover {
     color: #007bff;
     transform: translateX(5px);
   }
+  
   @media screen and (max-width: 768px) {
-    .skills-container {
+    .about-container {
       flex-direction: column; /* เปลี่ยนจากแถวเป็นคอลัมน์ */
-      gap: 1rem; /* ลดระยะห่าง */
+      gap: 1rem;
     }
-    .skills-list, .software-list {
+    .about-details, .contact-info {
       width: 100%; /* ใช้พื้นที่เต็ม */
     }
   }

@@ -1,6 +1,8 @@
 import React from "react";
 import "./project.css";
-
+import psu_parking from "../../pic/Psu_parking.pdf";
+import alert_radar from "../../pic/iot.pdf";
+import QIT from "../../pic/ProjectReport.pdf";
 const Project = () => {
   return (
     <section className="project-section">
@@ -22,8 +24,8 @@ const Project = () => {
             </li>
           </ul>
           <div className="project-buttons">
-            <a href="#" className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
-            <a href="#" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href={psu_parking} className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
+            <a href="https://github.com/Kongkitqq/Psu-parking" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <div className="project-list">
@@ -42,7 +44,7 @@ const Project = () => {
             </li>
           </ul>
           <div className="project-buttons">
-            <a href="#" className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
+            <a href={alert_radar} className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
           </div>
         </div>
         <div className="project-list">
@@ -55,20 +57,20 @@ const Project = () => {
             <li>Figma, Prototyping, Wireframing, UX/UI Design</li>
           </ul>
           <div className="project-buttons">
-            <a href="#" className="btn report-btn" target="_blank" rel="noopener noreferrer">Figma</a>
+            <a href="https://www.figma.com/proto/8XMhHeNjUHDwJ0bciViFnI/UX%2FUI-417_560?node-id=0-1&t=j9cBAODvWFzgq4DO-1" className="btn figma-btn" target="_blank" rel="noopener noreferrer">Figma</a>
           </div>
         </div>
         <div className="project-list">
           <h3>LazShop 2024</h3>
           <p>
-            Designed and implemented a role-based system for managing users, products, and transactions using OOP principles. Utilized encapsulation and inheritance to create reusable and maintainable code for Admin, Seller, and Customer functionalities.
+          Developed a console-based designed and implemented a role-based system for managing users, products, and transactions using OOP principles. Utilized encapsulation and inheritance to create reusable and maintainable code for Admin, Seller, and Customer functionalities.
           </p>
           <ul>
             <li>Technologies Used</li>
             <li>Java, JSON, OOP</li>
           </ul>
           <div className="project-buttons">
-            <a href="#" className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
+          <a href="https://github.com/Kongkitqq/Lazshop-OOP-using-java-" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
         </div>
         <div className="project-list">
@@ -77,11 +79,13 @@ const Project = () => {
             Developed a web-based system for managing and displaying products using React for the frontend. Designed a customer interface for browsing products with search, filter, and detailed product views. Built admin interface to manage product inventory, including updates for stock, prices, and product descriptions. Used Fetch API for data transfer between the frontend and backend.
           </p>
           <ul>
-            <li>Technologies Used:</li>
+            <li>Technologies Used</li>
             <li>React, JavaScript, Fetch API, HTML, CSS</li>
           </ul>
           <div className="project-buttons">
-            <a href="#" className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
+            <a href="https://github.com/Kongkitqq/QIT-" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href={QIT} className="btn report-btn" target="_blank" rel="noopener noreferrer">Project Report</a>
+
           </div>
           
         </div>
@@ -110,11 +114,11 @@ const Project = () => {
               offering discounts based on purchase amount, along with VAT calculation.
             </p>
             <ul>
-              <li>Technologies Used:</li>
+              <li>Technologies Used</li>
               <li>C, Console-based UI, VAT & Discount System</li>
             </ul>
             <div className="project-buttons">
-              <a href="#" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://github.com/Kongkitqq/Q-U-Cafe-Ordering-System" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
             </div>
           </div>
 

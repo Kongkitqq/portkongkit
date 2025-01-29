@@ -1,15 +1,12 @@
 import React, { useState, useEffect } from "react";
+import "./ScrollToTopButton.css"; // นำเข้าไฟล์ CSS
 
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     const toggleVisibility = () => {
-      if (window.scrollY > 200) {
-        setVisible(true);
-      } else {
-        setVisible(false);
-      }
+      setVisible(window.scrollY > 200);
     };
 
     window.addEventListener("scroll", toggleVisibility);
@@ -23,19 +20,7 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      style={{
-        position: "fixed",
-        bottom: "20px",
-        right: "20px",
-        display: visible ? "block" : "none",
-        backgroundColor: "#007bff",
-        color: "white",
-        border: "none",
-        padding: "10px 15px",
-        borderRadius: "5px",
-        cursor: "pointer",
-        fontSize: "18px",
-      }}
+      className={`scrollToTopBtn ${visible ? "show" : "hide"}`} // ใช้ className แทน style
     >
       ↑ Top
     </button>

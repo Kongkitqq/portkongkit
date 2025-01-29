@@ -120,6 +120,14 @@
   .github-btn:hover {
     background-color: #d6d8db; /* สีเทาเข้มขึ้นเมื่อโฮเวอร์ */
   }
+
+  .figma-btn {
+    background-color: #5ac5ef; /* สีแดงอ่อน */
+    color: #003b03; /* สีแดงเข้มสำหรับข้อความ */
+    border: 1px solid #f3efef;
+  }
+  
+  
   @media screen and (max-width: 768px) {
     .project-section {
       padding: 1rem;

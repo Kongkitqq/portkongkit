@@ -1,0 +1,32 @@
+.scrollToTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    color: white;
+    background-color: #212020;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* แสดงปุ่มเมื่อเลื่อนลง */
+  .show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* ซ่อนปุ่มเมื่ออยู่ด้านบน */
+  .hide {
+    opacity: 0;
+    transform: translateY(40px);
+    pointer-events: none;
+  }
+  
+  /* Hover effect */
+  .scrollToTopBtn:hover {
+    background-color: #022245;
+  }
+  
