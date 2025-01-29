@@ -98,7 +98,7 @@ const Project = () => {
             <li>C, File Handling, Data Structures (Linked List), User Authentication, Payment System</li>
           </ul>
           <div className="project-buttons">
-            <a href="#" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://github.com/Kongkitqq/Lasshop-data-structures-" className="btn github-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
           </div>
           
           </div>

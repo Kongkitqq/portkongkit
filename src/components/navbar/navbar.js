@@ -6,11 +6,10 @@
    return (
   <nav className='navbar'>
         <div className="desktopMenu">
-        <Link className='desktopMenuListItem'>Home</Link>
-        <Link className='desktopMenuListItem'>Skills</Link>        
-        <Link className='desktopMenuListItem'>About</Link>        
-        <Link className='desktopMenuListItem'>Project</Link>        
-
+        <Link to="home" smooth={true} duration={799} offset={-80} className='desktopMenuListItem'>Home</Link>
+        <Link to="skills" smooth={true} duration={799} offset={-80} className='desktopMenuListItem'>Skills</Link>
+        <Link to="about" smooth={true} duration={799} offset={-80} className='desktopMenuListItem'>About</Link>
+        <Link to="project" smooth={true} duration={799} offset={-80} className='desktopMenuListItem'>Project</Link>
 </div>
         <button className="desktopMenuBtn">
             Contact Me
