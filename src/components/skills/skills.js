@@ -9,7 +9,7 @@ export const Skills = () => {
         <div className="skills-list">
           <h3 className="skills-heading">Technical Skills</h3>
           <ul className="skills-items">
-            <li className="skills-item">C, Python, HTML, CSS, JavaScript</li>
+            <li className="skills-item">C, Python, HTML, CSS, JavaScript,SQL</li>
             <li className="skills-item">React (Basic), Node.js (Basic)</li>
             <li className="skills-item">User/Process Flows</li>
             <li className="skills-item">UX/UI Design</li>

@@ -1,7 +1,7 @@
 .skills-section {
     border-radius: 10px; /* มุมโค้งมน */
     padding: 2rem; /* ระยะห่างภายใน */
-    max-width: 70rem; /* จำกัดความกว้าง */
+    max-width: 80%; /* จำกัดความกว้าง */
     margin: 0.1rem auto; /* จัดให้อยู่ตรงกลาง */
     color: #ffffff; /* สีข้อความ */
   }
@@ -26,7 +26,7 @@
   }
   
   .skills-heading {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
     text-transform: uppercase;
@@ -41,7 +41,7 @@
   }
   
   .skills-item {
-    margin-bottom: 0.8rem;
+    margin-bottom: 2rem;
     line-height: 1.0;
     color: #dddddd;
     transition: color 0.3s ease, transform 0.3s ease;

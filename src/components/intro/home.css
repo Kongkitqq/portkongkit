@@ -1,15 +1,14 @@
 
 #Name{
-    height: calc(100vh-4rem);
-    width: 100vw;
-    max-width: 70rem;
+    width: 110vw;
+    max-width: 80%;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
 }
 
 .Kyai{
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: bold;
     color: #3ABEF9;
 }
@@ -64,7 +63,7 @@
     font-size:1.1rem;
   }
   .homeName{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: bold;
   
   }

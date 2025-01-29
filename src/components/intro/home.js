@@ -7,7 +7,6 @@ export const Home = () => {
     <section id="Name">
   <div className="content-container">
     <div className="text-content">
-      <span>:D </span>
       <span className="homeName">
         <span className="Kyai">K</span>ongkit Yeesai
       </span>

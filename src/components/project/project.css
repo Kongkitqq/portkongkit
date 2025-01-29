@@ -1,9 +1,9 @@
 /* สไตล์สำหรับส่วนหลักของโปรเจกต์ */
 .project-section {
-    background-color: #f9f9f9; /* สีพื้นหลังอ่อน */
+    background-color: #d5d9e6; /* สีพื้นหลังขาว */
     padding: 2rem; /* ระยะห่างภายใน */
     border-radius: 10px; /* มุมโค้งมน */
-    max-width: 800px; /* ความกว้างสูงสุด */
+    max-width: 60%; /* ความกว้างสูงสุด */
     margin: 2rem auto; /* จัดให้อยู่ตรงกลาง */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
   }
@@ -12,16 +12,19 @@
   .projectTitle {
     font-size: 2.5rem;
     font-weight: bold;
-    color: #333; /* สีเทาเข้ม */
+    color: #007bff; /* สีเทาเข้ม */
     text-align: center;
     margin-bottom: 1.5rem;
-  }
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+}
   
   /* สไตล์สำหรับคอนเทนเนอร์ของโปรเจกต์ */
   .project-container {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem; /* ระยะห่างระหว่างโปรเจกต์ */
+    gap: 2rem; /* ระยะห่างระหว่างโปรเจกต์ */
   }
   
   /* สไตล์สำหรับแต่ละโปรเจกต์ */

@@ -1,26 +1,24 @@
 .navbar {
-    height: 5rem;               /* ความสูงของ Navbar */
-    width: 100%;                /* ความกว้างเต็มหน้าจอ */
-    max-width: 90rem;           /* จำกัดความกว้างสูงสุด */
-    margin: 0 auto;             /* จัดให้อยู่ตรงกลางในแนวนอน */
-    padding: 1rem 3rem;         /* ระยะห่างด้านใน */
-    display: flex;              /* ใช้ Flexbox */
-    align-items: center;        /* จัดลูกป้ายแนวตั้งให้อยู่ตรงกลาง */
-    justify-content: space-between; /* จัดลูกป้ายแนวนอนให้อยู่ตรงข้าม */
-    position: sticky;           /* ตรึง Navbar ไว้บนสุดเมื่อเลื่อน */
-    top: 0;                     /* ให้ติดขอบบน */
-    background-color: #181818;     /* เพิ่มพื้นหลังสีดำ */
-    z-index: 100;               /* ให้ Navbar อยู่ข้างหน้า */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* เพิ่มเงาใต้ Navbar */
+    height: 5rem;               
+    width: 100%;                
+    margin: 0 auto;             
+    padding: 1rem 3rem;        
+    display: flex;              
+    align-items: center;        
+    justify-content: space-between; 
+    position: sticky;           
+    top: 0;                     
+    background-color: #181818;     
+    z-index: 100;               
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
-
 .desktopMenuListItem {
-    margin: 0 1rem;             /* ระยะห่างระหว่างแต่ละรายการ */
-    cursor: pointer;            /* เปลี่ยนเป็นลูกศรเมื่อชี้ */
-    color: #ffffff;             /* เพิ่มสีขาวให้กับข้อความ */
-    font-size: 1rem;            /* กำหนดขนาดฟอนต์ */
-    text-transform: uppercase;  /* ตัวอักษรพิมพ์ใหญ่ */
-    transition: all 0.3s ease;  /* เพิ่มเอฟเฟกต์ smooth */
+    margin: 0 1rem;             
+    cursor: pointer;            
+    color: #ffffff;           
+    font-size: 1rem;            
+    text-transform: uppercase;  
+    transition: all 0.3s ease;  
 }
 
 .desktopMenuListItem:hover {
@@ -30,24 +28,34 @@
 }
 
 .desktopMenuBtn {
-    height: 2rem;               /* ปรับความสูงของปุ่มให้ใหญ่ขึ้น */
-    box-shadow: inset 0px 0px 15px 3px #3572EF; /* เงาภายใน */
-    background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-    background-color: #3572EF;
-    border-radius: 20px;        /* ปรับมุมให้โค้งมนมากขึ้น */
-    border: 1px solid #1f2f47;
-    display: flex;
-    cursor: pointer;
-    color: #ffffff;
-    padding: 0 1rem;            /* เพิ่มความกว้างภายใน */
-    margin: 1rem;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #263666;
-    align-items: center;
-    justify-content: center;    /* จัดข้อความให้อยู่ตรงกลาง */
-    transition: all 0.3s ease;  /* เพิ่มเอฟเฟกต์ smooth */
+  height: 2rem;               /* ปรับความสูงของปุ่ม */
+  min-width: 8rem;            /* ความกว้างขั้นต่ำของปุ่ม */
+  max-width: 12rem;           /* ความกว้างสูงสุดของปุ่ม */
+  box-shadow: inset 0px 0px 15px 3px #3572EF; /* เงาภายใน */
+  background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+  background-color: #3572EF;
+  border-radius: 15px;        /* ปรับมุมให้โค้งมน */
+  border: 1px solid #1f2f47;
+  display: flex;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0 1rem;            /* ปรับความกว้างภายใน */
+  margin: 1rem;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+  align-items: center;
+  justify-content: center;    /* จัดข้อความให้อยู่ตรงกลาง */
+  transition: all 0.3s ease;  /* เพิ่มเอฟเฟกต์ smooth */
+  font-size: 1rem;            /* ปรับขนาดตัวอักษร */
 }
 
+@media screen and (max-width: 768px) {
+  .desktopMenuBtn {
+      height: 3rem;           /* ปรับความสูงสำหรับหน้าจอเล็ก */
+      min-width: 10rem;       /* ปรับความกว้างขั้นต่ำสำหรับหน้าจอเล็ก */
+      font-size: 0.9rem;      /* ปรับขนาดตัวอักษรสำหรับหน้าจอเล็ก */
+  }
+}
 .desktopMenuBtn:hover {
     transform: scale(1.15);     /* ขยายขนาดปุ่มขึ้น 15% */
     box-shadow: 0 4px 10px rgba(53, 114, 239, 0.4); /* เพิ่มเงาภายนอก */
