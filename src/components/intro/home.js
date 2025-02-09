@@ -1,7 +1,7 @@
 import React from 'react'
 import './home.css';
 import bg from '../../pic/profile.png'
-import resume from '../../pic/Resume_Kongkit Yeesai.pdf'
+import resume from '../../pic/Resume_Kongkit_Yeesai.pdf'
 import tran from '../../pic/Tran.pdf'
 export const Home = () => {
   return (

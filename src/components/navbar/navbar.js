@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-scroll';
-import resume from '../../pic/Resume_Kongkit Yeesai.pdf'
+import resume from '../../pic/Resume_Kongkit_Yeesai.pdf'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -19,7 +19,7 @@ const Navbar = () => {
         <Link to="project" smooth={true} duration={799} offset={-80} className='desktopMenuListItem'>Project</Link>
       </div>
 
-      <a href="/path/to/resume.pdf" className="btn btn-dowload_resume" download>📄 Download Resume</a>
+      <a href="/path/to/resume.pdf" className="btn btn-dowload_resume" download="Resume_Kongkit_Yeesai.pdf">📄 Download Resume</a>
       {/* Mobile Menu */}
       <div className={`mobileMenu ${isOpen ? "active" : ""}`}>
         <Link to="home" smooth={true} duration={799} offset={-80} className='mobileMenuListItem' onClick={() => setIsOpen(false)}>Home</Link>

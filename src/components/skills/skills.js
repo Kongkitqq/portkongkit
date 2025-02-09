@@ -10,10 +10,11 @@ export const Skills = () => {
           <h3 className="skills-heading">Technical Skills</h3>
           <ul className="skills-items">
             <li className="skills-item">C, Python, HTML, CSS, JavaScript, SQL(Oracle)</li>
-            <li className="skills-item">React (Basic), Node.js (Basic)</li>
-            <li className='skills-item'>Git, GitHub, Version Control</li>
+            <li className="skills-item">React, Node.js</li>
+            <li className='skills-item'>Git,Version Control</li>
             <li className="skills-item">User/Process Flows</li>
-            <li className="skills-item">UX/UI Design</li>
+            <li className="skills-item">UX/UI Design,Wireframing</li>
+            <li className="skills-item">REST API</li>
           </ul>
         </div>
         <div className="software-list">
@@ -25,6 +26,7 @@ export const Skills = () => {
             <li className="skills-item">Microsoft Office</li>
             <li className="skills-item">MySQL (phpMyAdmin), XAMPP</li>
             <li className="skills-item">Git</li>
+            
           </ul>
         </div>
       </div>
