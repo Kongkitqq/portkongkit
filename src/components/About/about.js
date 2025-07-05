@@ -14,7 +14,7 @@ const About = () => {
             <li className="about-item"><strong>Age:</strong> 21</li> {/* ใส่ปีเกิดแทนวันเกิดเต็ม */}
             <li className="about-item"><strong>Education:</strong> Bachelor of Science (ICT)</li>
             <li className="about-item"><strong>University:</strong> Prince of Songkla University, Hat Yai</li>
-            <li className="about-item"><strong>GPA:</strong> 3.54 | 3rd-Year Student</li>
+            <li className="about-item"><strong>GPA:</strong> 3.ุ57 |  Fourth-year student</li>
           </ul>
         </div>
 
