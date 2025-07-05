@@ -12,8 +12,7 @@ export const Home = () => {
         <span className="Kyai">K</span>ongkit Yeesai
       </span>
       <p className="homePara">
-        I'm a third-year ICT student at Prince of Songkla University. I'm looking for an internship in roles like frontend developer, web developer, backend developer, data analyst, or system analyst. <br />I want to gain experience, learn from professionals, and improve my skills by working on real projects.
-      </p>
+As a final-year ICT student at Prince of Songkla University, I have practical experience in full-stack web development, gained from my recent internship. I'm now looking for a Co-operative Education opportunity to grow my skills in building web applications (front-end and back-end). I'm particularly interested in exploring how to integrate and deploy machine learning models using modern web technologies for real-world use.      </p>
       <div className="button-container">
   <a href={resume} className="btn btn-resume" target="_blank" rel="noopener noreferrer">
     View Resume
