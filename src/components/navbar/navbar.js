@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import { Link } from 'react-scroll';
-import resume from '../../pic/Resume_Kongkit_Yeesai .pdf'
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
