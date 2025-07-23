@@ -1,32 +1,49 @@
 import React from 'react';
 import './skills.css';
+import { Typography } from '@mui/material';
 
 export const Skills = () => {
   return (
     <section id="skills" className="skills-section">
-      <span className="skillsTitle">Skills</span>
+      <Typography variant="h4" align="center" className="skillsTitle">
+        Skills
+      </Typography>
+
       <div className="skills-container">
         <div className="skills-list">
-          <h3 className="skills-heading">Technical Skills</h3>
+          <h3 className="skills-heading">Languages & Frameworks</h3>
           <ul className="skills-items">
-            <li className="skills-item">C, Python, HTML, CSS, JavaScript, SQL(Oracle)</li>
-            <li className="skills-item">React, Node.js</li>
-            <li className='skills-item'>Git,Version Control</li>
-            <li className="skills-item">User/Process Flows</li>
-            <li className="skills-item">UX/UI Design,Wireframing</li>
-            <li className="skills-item">REST API</li>
+            <li className="skills-item">
+              Python, C, JavaScript, HTML/CSS, SQL
+            </li>
+            <li className="skills-item">
+              React, Node.js, FastAPI, Tailwind CSS, Material UI (MUI)
+            </li>
+          </ul>
+
+          <h3 className="skills-heading">Database</h3>
+          <ul className="skills-items">
+            <li className="skills-item">PostgreSQL, MySQL</li>
+          </ul>
+
+          <h3 className="skills-heading">Machine Learning & AI</h3>
+          <ul className="skills-items">
+            <li className="skills-item">
+              TensorFlow, PyTorch, scikit-learn, Keras, Pandas, NumPy
+            </li>
           </ul>
         </div>
+
         <div className="software-list">
-          <h3 className="skills-heading">Software & Tools</h3>
+          <h3 className="skills-heading">Tools</h3>
           <ul className="skills-items">
-            <li className="skills-item">Visual Studio Code</li>
-            <li className="skills-item">Figma</li>
-            <li className="skills-item">Postman</li>
-            <li className="skills-item">Microsoft Office</li>
-            <li className="skills-item">MySQL (phpMyAdmin), XAMPP</li>
-            <li className="skills-item">Git</li>
-            
+            <li className="skills-item">
+              Git, Postman, Swagger, Figma, Jira, Visual Studio Code
+            </li>
+            <li className="skills-item">
+              Jupyter Notebook, Anaconda, Kaggle
+            </li>
+            <li className="skills-item">Railway, Render, pgAdmin</li>
           </ul>
         </div>
       </div>

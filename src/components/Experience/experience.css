@@ -1,0 +1,299 @@
+/* --- Global Experience Section Styles --- */
+/*
+ * ส่วนนี้กำหนดสไตล์โดยรวมสำหรับคอนเทนเนอร์หลักที่ครอบคลุมทุกประสบการณ์
+ * เป้าหมายคือสร้างพื้นที่ที่ดูแข็งแกร่งและทันสมัย ด้วยพื้นหลังสีเข้ม เงาที่ชัดเจน
+ * และใช้ฟอนต์ที่ทันสมัยเพื่อเพิ่มความเป็นมืออาชีพ
+ */
+.experience-section {
+    border-radius: 10px; /* มุมโค้งมน */
+    padding: 2rem; /* ระยะห่างภายใน */
+    max-width: 80%; /* จำกัดความกว้างสูงสุดตามตัวอย่าง skills-section */
+    margin: 2rem auto; /* จัดให้อยู่ตรงกลาง (ปรับจาก 0.1rem เพื่อให้มีระยะห่างจากขอบจอมากขึ้น) */
+    color: #ffffff; /* สีข้อความหลักเป็นสีขาว */
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงาที่ชัดเจน */
+}
+
+/* --- Experience Section Title Styles --- */
+/*
+ * สไตล์สำหรับหัวข้อหลัก "Experience" ที่จะดึงดูดความสนใจ
+ * ทำให้โดดเด่นด้วยขนาดที่ใหญ่ขึ้น สีฟ้าสดใส และตัวพิมพ์ใหญ่
+ */
+.experienceTitle {
+    font-size: 2.5rem; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* ตัวหนา */
+    color: #007bff; /* สีฟ้าสดใสตามที่คุณต้องการ */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ทั้งหมด */
+    display: block; /* เพื่อให้ text-align ทำงานได้ */
+    position: relative; /* สำหรับ pseudo-element */
+    letter-spacing: 0.05em; /* เพิ่มระยะห่างตัวอักษรเล็กน้อย */
+}
+
+.experienceTitle::after { /* เส้นใต้ตกแต่ง */
+    content: '';
+    display: block;
+    width: 60px; /* ความยาวเส้นใต้ */
+    height: 3px; /* ความหนาเส้นใต้ */
+    background-color: #007bff; /* สีฟ้าสดใส */
+    margin: 0.75rem auto 0; /* จัดกึ่งกลางและมีระยะห่าง */
+    border-radius: 2px;
+}
+
+
+/* --- Experience Cards Container (Layout) --- */
+/*
+ * ส่วนนี้จัดการโครงสร้างการแสดงผลของแต่ละประสบการณ์
+ * ใช้ CSS Grid เพื่อความยืดหยุ่นในการจัดเรียง Card ในหลายคอลัมน์
+ */
+.experience-container {
+    display: grid; /* ใช้ Grid สำหรับการจัดเรียง Card */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Card มีความกว้างอย่างน้อย 300px และขยายเต็มพื้นที่ */
+    gap: 2rem; /* ระยะห่างระหว่าง Card */
+}
+
+/* --- Individual Experience Card Styles --- */
+/*
+ * สไตล์สำหรับแต่ละ Card ของประสบการณ์
+ * เน้นความชัดเจนบนพื้นหลังเข้ม มีเงาและเอฟเฟกต์การโฮเวอร์ที่ดูดี
+ */
+.experience-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เงาสำหรับ Card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 123, 255, 0.2); /* ขอบบางๆ สีฟ้าโปร่งใส */
+}
+
+.experience-card:hover {
+    transform: translateY(-5px); /* เลื่อนขึ้นเมื่อโฮเวอร์ */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* เงาเข้มขึ้น */
+    border-color: #007bff; /* ขอบเป็นสีฟ้าสดใสเมื่อโฮเวอร์ */
+}
+
+.experience-company {
+    font-size: 1.5rem; /* ขนาดหัวข้อบริษัท */
+    color: #ffffff; /* สีขาวสำหรับชื่อบริษัท */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ตามตัวอย่าง skills-heading */
+    border-bottom: 2px solid #007bff; /* เส้นใต้สีฟ้าสดใส */
+    padding-bottom: 0.5rem; /* ระยะห่างใต้เส้นใต้ */
+}
+
+.experience-role {
+    font-size: 1.1rem;
+    color: #007bff; /* สีฟ้าสดใสสำหรับตำแหน่ง */
+    margin-top: 0.5rem; /* เพิ่มระยะห่างจากชื่อบริษัท */
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.experience-duration {
+    font-size: 0.95rem;
+    color: #cccccc; /* สีเทาอ่อนสำหรับระยะเวลา */
+    margin-bottom: 1rem;
+}
+
+.experience-description {
+    list-style-type: disc; /* ใช้ bullet points */
+    margin-left: 1.25rem;
+    padding: 0;
+    font-size: 1rem; /* ขนาดข้อความคำอธิบาย */
+    color: #dddddd; /* สีเทาอ่อนสำหรับคำอธิบาย */
+    line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+    flex-grow: 1;
+    margin-bottom: 1.5rem;
+}
+
+.experience-description li {
+    margin-bottom: 0.8rem; /* เพิ่มระยะห่างระหว่างแต่ละ bullet point */
+    transition: color 0.3s ease, transform 0.3s ease; /* เพิ่ม transition */
+}
+
+.experience-description li:hover {
+    color: #007bff; /* เปลี่ยนสีเมื่อโฮเวอร์ */
+    transform: translateX(5px); /* เลื่อนไปทางขวาเมื่อโฮเวอร์ */
+}
+
+.experience-tech {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.experience-tech h4 {
+    font-size: 1rem;
+    color: #ffffff; /* สีขาวสำหรับหัวข้อเทคโนโลยี */
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.experience-tech p {
+    font-size: 0.9rem;
+    color: #cccccc; /* สีเทาอ่อนสำหรับรายการเทคโนโลยี */
+    line-height: 1.5;
+}
+
+/* --- Experience Card Button Container --- */
+.experience-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+/* --- General Button Styles --- */
+.btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    white-space: nowrap;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Specific Button Styles for Experience Links --- */
+.experience-link-btn {
+    background-color: #007bff; /* สีฟ้าสดใส */
+    color: #ffffff; /* ข้อความสีขาว */
+    border: 1px solid #007bff;
+}
+
+.experience-link-btn:hover {
+    background-color: #0056b3; /* สีฟ้าเข้มขึ้นเมื่อโฮเวอร์ */
+    border-color: #0056b3;
+}
+
+/* --- Fallback message for no experience --- */
+.no-experience {
+    text-align: center;
+    color: #888;
+    font-style: italic;
+    grid-column: 1 / -1; /* Span across all columns in grid */
+}
+
+/* --- Responsive Adjustments --- */
+@media screen and (max-width: 960px) {
+    .experience-section {
+        max-width: 90%; /* ขยายความกว้างบนจอขนาดกลาง */
+        padding: 1.5rem;
+    }
+    .experienceTitle {
+        font-size: 2.2rem;
+    }
+    .experience-container {
+        gap: 1.5rem;
+    }
+    .experience-card {
+        padding: 1.2rem;
+    }
+    .experience-company {
+        font-size: 1.3rem;
+    }
+    .experience-role {
+        font-size: 1rem;
+    }
+    .experience-description {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .experience-section {
+        max-width: 95%; /* ขยายความกว้างบนแท็บเล็ต/มือถือ */
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+    .experienceTitle {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .experienceTitle::after {
+        width: 50px;
+        height: 2px;
+        margin-top: 0.5rem;
+    }
+    .experience-container {
+        grid-template-columns: 1fr; /* เรียงเป็นคอลัมน์เดียว */
+        gap: 1rem;
+    }
+    .experience-card {
+        padding: 1rem;
+    }
+    .experience-company {
+        font-size: 1.2rem;
+    }
+    .experience-role {
+        font-size: 0.9rem;
+    }
+    .experience-duration {
+        font-size: 0.85rem;
+    }
+    .experience-description {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+    .experience-description li {
+        margin-bottom: 0.5rem;
+    }
+    .experience-tech h4, .experience-tech p {
+        font-size: 0.8rem;
+    }
+    .btn {
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .experience-section {
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+    .experienceTitle {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.03em;
+    }
+    .experienceTitle::after {
+        width: 40px;
+    }
+    .experience-card {
+        padding: 0.8rem;
+    }
+    .experience-company {
+        font-size: 1.1rem;
+        padding-bottom: 0.3rem;
+    }
+    .experience-role {
+        font-size: 0.8rem;
+    }
+    .experience-duration {
+        font-size: 0.75rem;
+    }
+    .experience-description, .experience-tech p {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    .experience-description li {
+        margin-bottom: 0.4rem;
+    }
+    .btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+    .experience-links {
+        gap: 0.4rem;
+    }
+}

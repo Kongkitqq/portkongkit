@@ -1,147 +1,305 @@
-/* สไตล์สำหรับส่วนหลักของโปรเจกต์ */
+/* --- Global Project Section Styles --- */
+/*
+ * ส่วนนี้กำหนดสไตล์โดยรวมสำหรับคอนเทนเนอร์หลักที่ครอบคลุมทุกโปรเจกต์
+ * เป้าหมายคือสร้างพื้นที่ที่ดูแข็งแกร่งและทันสมัย ด้วยพื้นหลังสีเข้ม เงาที่ชัดเจน
+ * และใช้ฟอนต์ที่ทันสมัยเพื่อเพิ่มความเป็นมืออาชีพ
+ */
 .project-section {
-    background-color: #d5d9e6; /* สีพื้นหลังขาว */
-    padding: 2rem; /* ระยะห่างภายใน */
     border-radius: 10px; /* มุมโค้งมน */
-    max-width: 60%; /* ความกว้างสูงสุด */
-    margin: 2rem auto; /* จัดให้อยู่ตรงกลาง */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* เงา */
-  }
-  
-  /* สไตล์สำหรับชื่อหัวข้อโปรเจกต์ */
-  .projectTitle {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #007bff; /* สีเทาเข้ม */
-    text-align: center;
-    margin-bottom: 1.5rem;
-    display: flex;
-    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
-    align-items: center; /* จัดให้อยู่กลางแนวตั้ง */
+    padding: 2rem; /* ระยะห่างภายใน */
+    max-width: 1450px; /* เพิ่มความกว้างสูงสุดเพื่อให้รองรับ 3 คอลัมน์ได้ดีขึ้น */
+    margin: 3rem auto; /* จัดให้อยู่ตรงกลาง */
+    color: #ffffff; /* สีข้อความหลักเป็นสีขาว */
+    box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.3); /* เพิ่มเงาที่ชัดเจน */
+    font-family: 'Inter', 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; /* ฟอนต์ที่ทันสมัย */
 }
-  
-  /* สไตล์สำหรับคอนเทนเนอร์ของโปรเจกต์ */
-  .project-container {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem; /* ระยะห่างระหว่างโปรเจกต์ */
-  }
-  
-  /* สไตล์สำหรับแต่ละโปรเจกต์ */
-  .project-list {
-    background-color: #fff; /* สีพื้นหลังขาว */
+
+/* --- Project Title Styles --- */
+/*
+ * สไตล์สำหรับหัวข้อหลัก "Projects" ที่จะดึงดูดความสนใจ
+ * ทำให้โดดเด่นด้วยขนาดที่ใหญ่ขึ้น สีฟ้าสดใส และตัวพิมพ์ใหญ่
+ */
+.projectTitle {
+    font-size: 2.5rem; /* ขนาดตัวอักษรใหญ่ขึ้น */
+    font-weight: bold; /* ตัวหนา */
+    color: #007bff; /* สีฟ้าสดใสตามที่คุณต้องการ */
+    text-align: center; /* จัดให้อยู่ตรงกลาง */
+    margin-bottom: 1.5rem;
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ทั้งหมด */
+    display: block; /* เพื่อให้ text-align ทำงานได้ */
+    position: relative; /* สำหรับ pseudo-element */
+    letter-spacing: 0.05em; /* เพิ่มระยะห่างตัวอักษรเล็กน้อย */
+}
+
+.projectTitle::after { /* เส้นใต้ตกแต่ง */
+    content: '';
+    display: block;
+    width: 60px; /* ความยาวเส้นใต้ */
+    height: 3px; /* ความหนาเส้นใต้ */
+    background-color: #007bff; /* สีฟ้าสดใส */
+    margin: 0.75rem auto 0; /* จัดกึ่งกลางและมีระยะห่าง */
+    border-radius: 2px;
+}
+
+/* --- Project Container (Layout) --- */
+/*
+ * ส่วนนี้จัดการโครงสร้างการแสดงผลของแต่ละโปรเจกต์
+ * ใช้ CSS Grid เพื่อความยืดหยุ่นในการจัดเรียง Card โปรเจกต์ในหลายคอลัมน์
+ * และปรับเปลี่ยนให้เหมาะสมกับขนาดหน้าจอต่างๆ ได้ง่าย
+ */
+.project-container {
+    display: grid; /* ใช้ Grid สำหรับการจัดเรียง Card */
+    /* กำหนดให้แต่ละ Card มีความกว้างอย่างน้อย 280px เพื่อให้สามารถแสดง 3 คอลัมน์ได้บนหน้าจอขนาดใหญ่ */
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
+    gap: 2.5rem; /* กำหนดระยะห่างระหว่าง Card โปรเจกต์ทั้งแนวตั้งและแนวนอน */
+}
+
+/* --- Individual Project Card Styles --- */
+/*
+ * สไตล์สำหรับแต่ละ Card ของโปรเจกต์
+ * เน้นความชัดเจนบนพื้นหลังเข้ม มีเงาและเอฟเฟกต์การโฮเวอร์ที่ดูดี
+ */
+.project-list {
+    background-color: #ffffff; /* สีพื้นหลัง Card ที่เข้มขึ้นเล็กน้อย */
     padding: 1.5rem;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  /* สไตล์สำหรับชื่อโปรเจกต์ */
-  .project-list h3 {
-    font-size: 1.8rem;
-    color: #007bff; /* สีฟ้า */
-    margin-bottom: 0.5rem;
-  }
-  
-  /* สไตล์สำหรับคำอธิบายโปรเจกต์ */
-  .project-list p {
-    font-size: 1rem;
-    color: #555; /* สีเทาเข้ม */
-    line-height: 1.6;
-  }
-  
-  /* สไตล์สำหรับรายการเทคโนโลยีที่ใช้ */
-  .project-list ul {
-    list-style-type: none; /* เอาเครื่องหมายจุดออก */
-    padding: 0;
-    margin-top: 1rem;
-  }
-  
-  .project-list ul li {
-    font-size: 1rem;
-    color: #555; /* สีเทาเข้ม */
-    line-height: 1.6;
-  }
-  
-  /* สไตล์สำหรับลิงก์ */
-  .project-links {
-    margin-top: 1rem;
-  }
-  
-  .project-links a {
-    display: inline-block;
-    margin-right: 1rem;
-    font-size: 1rem;
-    color: #007bff; /* สีฟ้า */
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .project-links a:hover {
-    color: #0056b3; /* สีฟ้าเข้มเมื่อโฮเวอร์ */
-  }
-  
-  /* เอฟเฟกต์เมื่อโฮเวอร์ที่โปรเจกต์ */
-  .project-list:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-  /* สไตล์สำหรับปุ่มทั่วไป */
-.btn {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    margin-right: 1rem;
-    font-size: 1rem;
-    font-weight: bold;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-  }
-  
-  /* สไตล์สำหรับปุ่ม Report */
-  .report-btn {
-    background-color: #f8d7da; /* สีแดงอ่อน */
-    color: #721c24; /* สีแดงเข้มสำหรับข้อความ */
-    border: 1px solid #f5c6cb;
-  }
-  
-  .report-btn:hover {
-    background-color: #f5c6cb; /* สีแดงเข้มขึ้นเมื่อโฮเวอร์ */
-  }
-  
-  /* สไตล์สำหรับปุ่ม GitHub */
-  .github-btn {
-    background-color: #e2e3e5; /* สีเทาอ่อน */
-    color: #383d41; /* สีเทาเข้มสำหรับข้อความ */
-    border: 1px solid #d6d8db;
-  }
-  
-  .github-btn:hover {
-    background-color: #d6d8db; /* สีเทาเข้มขึ้นเมื่อโฮเวอร์ */
-  }
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* เงาสำหรับ Card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 123, 255, 0.2); /* ขอบบางๆ สีฟ้าโปร่งใส */
+}
 
-  .figma-btn {
-    background-color: #b5ec9d; /* สีแดงอ่อน */
-    color: #003b03; /* สีแดงเข้มสำหรับข้อความ */
-  }
-  
-  
-  @media screen and (max-width: 768px) {
+.project-list:hover {
+    transform: translateY(-5px); /* เลื่อนขึ้นเมื่อโฮเวอร์ */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* เงาเข้มขึ้น */
+    border-color: #007bff; /* ขอบเป็นสีฟ้าสดใสเมื่อโฮเวอร์ */
+}
+
+.project-list h3 {
+    font-size: 1.5rem; /* ขนาดหัวข้อโปรเจกต์ใน Card */
+    color: #000000; /* สีขาวสำหรับชื่อโปรเจกต์ */
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ตามตัวอย่าง skills-heading */
+    border-bottom: 2px solid #007bff; /* เส้นใต้สีฟ้าสดใส */
+    padding-bottom: 0.5rem; /* ระยะห่างใต้เส้นใต้ */
+}
+
+.project-list p {
+    font-size: 1rem; /* ขนาดตัวอักษรของคำอธิบายโปรเจกต์ */
+    color: #000000; /* สีเทาอ่อนสำหรับคำอธิบาย */
+    line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
+    flex-grow: 1; /* ทำให้คำอธิบายขยายเต็มพื้นที่ที่เหลือใน Card */
+    margin-bottom: 1.5rem; /* ระยะห่างด้านล่างคำอธิบาย */
+}
+
+/* --- Technologies List Styles --- */
+.project-list ul {
+    list-style-type: none; /* ลบเครื่องหมายจุดนำหน้าออก */
+    padding: 0;
+    margin-top: 1rem; /* ระยะห่างด้านบน */
+}
+
+.project-list ul li {
+    font-size: 1rem; /* ขนาดตัวอักษรสำหรับแต่ละเทคโนโลยี */
+    color: #000000; /* สีเทาอ่อนลงเล็กน้อย */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 0.8rem; /* เพิ่มระยะห่างระหว่างแต่ละรายการ */
+    transition: color 0.3s ease, transform 0.3s ease; /* เพิ่ม transition */
+}
+
+.project-list ul li:first-child {
+    font-weight: 600; /* ทำให้ข้อความ "Technologies Used" เป็นตัวหนา */
+    color: #000000; /* สีขาวสำหรับหัวข้อรายการ */
+    margin-bottom: 0.5rem; /* ระยะห่างจากรายการเทคโนโลยีอื่นๆ */
+}
+
+.project-list ul li:hover {
+    color: #007bff; /* เปลี่ยนสีเมื่อโฮเวอร์ */
+    transform: translateX(5px); /* เลื่อนไปทางขวาเมื่อโฮเวอร์ */
+}
+
+/* --- Project Button Container --- */
+.project-buttons {
+    margin-top: 1.5rem; /* ระยะห่างด้านบนปุ่ม */
+    display: flex; /* ใช้ Flexbox เพื่อเรียงปุ่ม */
+    flex-wrap: wrap; /* ให้ปุ่มขึ้นบรรทัดใหม่ได้ถ้าพื้นที่ไม่พอ */
+    gap: 0.75rem; /* ระยะห่างระหว่างปุ่ม */
+}
+
+/* --- General Button Styles --- */
+.btn {
+    padding: 0.6rem 1.2rem; /* ขนาดของ padding ภายในปุ่ม */
+    font-size: 0.9rem; /* ขนาดตัวอักษรในปุ่ม */
+    font-weight: 600; /* น้ำหนักตัวอักษรในปุ่ม */
+    text-align: center; /* จัดข้อความให้อยู่กึ่งกลางปุ่ม */
+    text-decoration: none; /* ลบขีดเส้นใต้ของลิงก์ออก */
+    border-radius: 6px; /* ทำให้มุมของปุ่มโค้งมนเล็กน้อย */
+    transition: all 0.2s ease-in-out; /* เพิ่ม Transition เพื่อให้เกิดอนิเมชันที่ลื่นไหล */
+    cursor: pointer; /* เปลี่ยนรูปเมาส์เป็นรูปนิ้วชี้เมื่อวางบนปุ่ม */
+    white-space: nowrap; /* ป้องกันไม่ให้ข้อความในปุ่มขึ้นบรรทัดใหม่ */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเล็กน้อยให้ปุ่มมีมิติ */
+}
+
+.btn:hover {
+    /* เอฟเฟกต์เมื่อโฮเวอร์บนปุ่ม */
+    filter: brightness(1.1); /* ทำให้สีปุ่มสว่างขึ้นเล็กน้อย */
+    transform: translateY(-3px); /* ทำให้ปุ่มเลื่อนขึ้นเล็กน้อย */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15); /* ทำให้เงาเข้มขึ้นและขยายตัว */
+}
+
+/* --- Specific Button Styles (with vibrant blue accent) --- */
+.report-btn {
+    background-color: #ff4d4f; /* สีแดงสดใสสำหรับปุ่ม Report */
+    color: #fff; /* ข้อความสีขาว */
+    border: 1px solid #ff4d4f; /* ขอบสีเดียวกับพื้นหลัง */
+}
+
+.report-btn:hover {
+    background-color: #f5222d; /* สีแดงเข้มขึ้นเมื่อโฮเวอร์ */
+    border-color: #f5222d;
+}
+
+.github-btn {
+    background-color: #24292e; /* สีดำมาตรฐานของ GitHub */
+    color: #fff;
+    border: 1px solid #24292e;
+}
+
+.github-btn:hover {
+    background-color: #1b1e22; /* สีดำเข้มขึ้นเมื่อโฮเวอร์ */
+    border-color: #1b1e22;
+}
+
+.figma-btn {
+    background-color: #007bff; /* สีฟ้าสดใสที่คุณต้องการ */
+    color: #fff; /* ข้อความสีขาว เพื่อให้ตัดกับสีฟ้า */
+    border: 1px solid #007bff;
+    font-weight: 600; /* ทำให้ข้อความเป็นตัวหนาขึ้น */
+}
+
+.figma-btn:hover {
+    background-color: #0056b3; /* สีฟ้าเข้มขึ้นเมื่อโฮเวอร์ */
+    border-color: #0056b3;
+}
+
+/* --- Responsive Adjustments --- */
+@media screen and (max-width: 1024px) { /* เพิ่ม breakpoint สำหรับจอขนาดใหญ่ขึ้นเล็กน้อย */
     .project-section {
-      padding: 1rem;
-    }
-    .projectTitle {
-      font-size: 2rem;
+        max-width: 90%; /* ให้ใช้ความกว้างมากขึ้นเล็กน้อยบนจอเหล่านี้ */
+        padding: 2rem 1.5rem;
     }
     .project-container {
-      gap: 1rem;
+        /* ยังคงพยายามแสดง 3 คอลัมน์ แต่ min-width ลดลงเล็กน้อย */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    /* ปรับสำหรับหน้าจอขนาดกลาง (เช่น แล็ปท็อปขนาดเล็ก หรือแท็บเล็ตแนวนอน) */
+    .project-section {
+        max-width: 90%; /* ให้ใช้ความกว้างมากขึ้นเล็กน้อยบนหน้าจอเหล่านี้ */
+        padding: 1.5rem;
+    }
+    .projectTitle {
+        font-size: 2.2rem;
+    }
+    .project-container {
+        /* เปลี่ยนเป็น 2 คอลัมน์บนหน้าจอขนาดกลาง */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        gap: 1.5rem; /* ลดระยะห่าง */
     }
     .project-list {
-      padding: 1rem;
+        padding: 1.2rem;
+    }
+    .project-list h3 {
+        font-size: 1.3rem;
+    }
+    .project-list p {
+        font-size: 0.95rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* ปรับสำหรับแท็บเล็ตแนวตั้ง หรือจอเล็กกว่า */
+    .project-section {
+        max-width: 95%; /* ขยายให้กว้างขึ้นอีก */
+        margin: 1.5rem auto;
+        padding: 1rem;
+    }
+    .projectTitle {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .projectTitle::after {
+        width: 50px;
+        height: 2px;
+        margin-top: 0.5rem;
+    }
+    .project-container {
+        grid-template-columns: 1fr; /* เรียงเป็นคอลัมน์เดียว */
+        gap: 1rem;
+    }
+    .project-list {
+        padding: 1rem;
+    }
+    .project-list h3 {
+        font-size: 1.2rem;
+    }
+    .project-list p {
+        font-size: 0.9rem;
+    }
+    .project-list ul li {
+        font-size: 0.85rem;
+        margin-bottom: 0.5rem;
+    }
+    .project-tech h4, .project-tech p {
+        font-size: 0.8rem;
     }
     .btn {
-      padding: 0.5rem 0.8rem;
-      font-size: 0.9rem;
+        padding: 0.4rem 0.8rem;
+        font-size: 0.8rem;
     }
-  }
+    .project-buttons {
+        gap: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-section {
+        padding: 0.75rem;
+        border-radius: 8px;
+    }
+    .projectTitle {
+        font-size: 1.5rem;
+        margin-bottom: 0.75rem;
+        letter-spacing: 0.03em;
+    }
+    .projectTitle::after {
+        width: 40px;
+    }
+    .project-list {
+        padding: 0.8rem;
+    }
+    .project-list h3 {
+        font-size: 1.1rem;
+        padding-bottom: 0.3rem;
+    }
+    .project-list p,
+    .project-list ul li {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    .project-list ul li {
+        margin-bottom: 0.4rem;
+    }
+    .btn {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.7rem;
+    }
+    .project-buttons {
+        gap: 0.4rem;
+    }
+}
