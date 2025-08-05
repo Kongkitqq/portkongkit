@@ -1,32 +1,53 @@
 .scrollToTopBtn {
+    /* ใช้ตำแหน่งแบบ fixed เพื่อให้อยู่กับที่เมื่อ scroll */
     position: fixed;
     bottom: 20px;
     right: 40px;
+    
+    /* สไตล์ปุ่ม */
     color: white;
-    background-color: #212020;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem; /* เพิ่มขนาดตัวอักษร */
+    padding: 15px 20px; /* เพิ่มขนาด padding */
+    border-radius: 50%; /* ทำให้เป็นทรงกลม */
     cursor: pointer;
-    font-size: 18px;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* แสดงปุ่มเมื่อเลื่อนลง */
-  .show {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  
-  /* ซ่อนปุ่มเมื่ออยู่ด้านบน */
-  .hide {
+    border: none;
+    
+    /* เพิ่มการไล่สี (Gradient) ให้ดูน่าสนใจ */
+    background-image: linear-gradient(45deg, #007bff, #0056b3);
+    
+    /* เพิ่มเงาให้ปุ่มดูมีมิติ */
+    box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+    
+    /* เพิ่ม transition เพื่อให้เกิด animation ที่นุ่มนวลขึ้น */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    
+    /* ซ่อนปุ่มเริ่มต้น */
     opacity: 0;
     transform: translateY(40px);
     pointer-events: none;
-  }
-  
-  /* Hover effect */
-  .scrollToTopBtn:hover {
-    background-color: #022245;
-  }
-  
+}
+ 
+/* แสดงปุ่มเมื่อเลื่อนลง */
+.scrollToTopBtn.show {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
+ 
+/* Hover effect: เปลี่ยนสี, เพิ่มเงา */
+.scrollToTopBtn:hover {
+    background-image: linear-gradient(45deg, #0056b3, #003d80);
+    box-shadow: 0 6px 20px rgba(0, 123, 255, 0.6);
+    transform: translateY(-5px) scale(1.05); /* ยกขึ้นเล็กน้อยและขยาย */
+}
+ 
+/* สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+    .scrollToTopBtn {
+        bottom: 10px;
+        right: 20px;
+        font-size: 1.2rem;
+        padding: 12px 16px;
+    }
+}

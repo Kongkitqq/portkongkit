@@ -14,7 +14,7 @@ const About = () => {
             <li className="about-item"><strong>Age:</strong> 21</li>
             <li className="about-item"><strong>Education:</strong> Bachelor of Science in Information and Communication Technology (ICT)</li>
             <li className="about-item"><strong>University:</strong> Prince of Songkla University, Hat Yai Campus</li>
-            <li className="about-item"><strong>GPA:</strong> 3.57 | 4th-Year Student</li>
+            <li className="about-item"><strong>GPAX:</strong> 3.57 | 4th-Year Student</li>
           </ul>
         </div>
 

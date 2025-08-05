@@ -182,7 +182,35 @@
     font-style: italic;
     grid-column: 1 / -1; /* Span across all columns in grid */
 }
+/* เพิ่ม CSS สำหรับแท็ก "In Progress" */
+.in-progress-tag {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #ff4d4f; /* สีแดงสำหรับ In Progress */
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0 8px 0 8px; /* ทำให้มุมล่างซ้ายโค้ง */
+  text-transform: uppercase;
+}
 
+/*
+ * คุณต้องเพิ่ม 'position: relative;' ให้กับ `.project-list`
+ * เพื่อให้ `position: absolute;` ใน `.in-progress-tag` ทำงานได้อย่างถูกต้อง
+ */
+.project-list {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 123, 255, 0.2);
+  position: relative; /* เพิ่มบรรทัดนี้ */
+}
 /* --- Responsive Adjustments --- */
 @media screen and (max-width: 960px) {
     .experience-section {

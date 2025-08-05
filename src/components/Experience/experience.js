@@ -8,14 +8,14 @@ const Experience = () => {
     {
       company: "EILA (Education and Innovative Learning Academy)",
       role: "Web and Mobile Developer Intern",
-      duration: "เมษายน 17, 2568 – มิถุนายน 6, 2568",
+      duration: "17 April 2025 – 6 June 2025 (1 Month 20 Days)",
       description: [
-        "พัฒนาและเชื่อมโยง Full-stack web applications สำหรับระบบจองบูธ โดยใช้ HTML, Tailwind CSS, JavaScript, และ Node.js",
-        "จัดการฐานข้อมูล PostgreSQL และสร้างเอกสาร Software Requirements Specification (SRS) เพื่อเป็นแนวทางในการพัฒนาโปรเจกต์",
-        "ได้รับประสบการณ์จริงในการใช้งานแพลตฟอร์ม Deployment (Railway, Render) และเครื่องมือจัดการฐานข้อมูล (pgAdmin)",
-        "พัฒนาทักษะการนำเสนอและการรายงานความคืบหน้าผ่านการอัปเดตโปรเจกต์เป็นประจำ"
+        "Developed and integrated full-stack web applications for a booth reservation system using HTML, Tailwind CSS, JavaScript, and Node.js",
+        "Managed PostgreSQL databases and created Software Requirements Specification (SRS) documents to guide project development.",
+        "Gained practical experience with deployment platforms (Railway, Render) and database management tools (pgAdmin).",
+        "Enhanced presentation and progress reporting skills through regular project updates."
       ],
-      technologies: ["HTML", "Tailwind CSS", "JavaScript", "Node.js", "PostgreSQL", "Railway", "Render", "pgAdmin", "SRS Documentation"],
+      technologies: ["HTML", "Tailwind CSS", "JavaScript", "Node.js", "PostgreSQL", "Railway", "Render", "pgAdmin", ],
       links: []
     }
   ];
@@ -36,7 +36,7 @@ const Experience = () => {
                 ))}
               </ul>
               <div className="experience-tech"> {/* Updated class name */}
-                <h4>Technologies Used:</h4>
+                <h4>Technologies Used</h4>
                 <p>{internship.technologies.join(', ')}</p>
               </div>
               <div className="experience-links"> {/* Updated class name */}
