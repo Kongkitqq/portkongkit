@@ -21,8 +21,7 @@ const Project = () => {
           <div className="technologies-used">
             <h4>Technologies Used</h4>
             <p>
-              React, FastAPI, PostgreSQL, CNN (InceptionV3 & EfficientNetB0), Python, JavaScript
-            </p>
+                Python, JavaScript, React.js, FastAPI, PostgreSQL, TensorFlow, InceptionV3, EfficientNetB0, Material UI (MUI), Git,</p>
           </div>
           <div className="project-buttons">
             <a href="https://www.kaggle.com/code/kongkityeesai/tomato-leaf-disease" className="btn kaggle-btn" target="_blank" rel="noopener noreferrer">Kaggle Model</a>
