@@ -1,0 +1,189 @@
+{
+    "navbar": {
+        "home": "หน้าแรก",
+        "skills": "ทักษะ",
+        "about": "เกี่ยวกับ",
+        "experience": "ประสบการณ์",
+        "project": "โปรเจค",
+        "downloadResume": "📄 ดาวน์โหลด Resume"
+    },
+    "home": {
+        "bio": "ผมเป็นนักศึกษาชั้นปีที่ 4 สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT) มหาวิทยาลัยสงขลานครินทร์ กำลังมองหาโอกาสฝึกงานสหกิจในตำแหน่ง Frontend Developer, Backend Developer, Full-Stack Developer หรือด้าน Machine Learning อยากได้รับประสบการณ์จริงจากโปรเจคจริง และพัฒนาตัวเองอย่างต่อเนื่องผ่านการทำงานร่วมกับมืออาชีพ",
+        "viewResume": "ดู Resume",
+        "viewTranscript": "ดู Transcript"
+    },
+    "about": {
+        "title": "เกี่ยวกับ",
+        "personal": "ข้อมูลส่วนตัว",
+        "name": "ชื่อ",
+        "nameValue": "นายกองกิต ยีสาย (อิ๊กกิว)",
+        "age": "อายุ",
+        "ageValue": "21 ปี",
+        "education": "การศึกษา",
+        "educationValue": "วิทยาศาสตรบัณฑิต สาขาเทคโนโลยีสารสนเทศและการสื่อสาร (ICT)",
+        "university": "มหาวิทยาลัย",
+        "universityValue": "มหาวิทยาลัยสงขลานครินทร์ วิทยาเขตหาดใหญ่",
+        "gpax": "เกรดเฉลี่ย",
+        "gpaxValue": "3.57 | นักศึกษาชั้นปีที่ 4",
+        "contact": "ข้อมูลติดต่อ",
+        "phone": "โทรศัพท์",
+        "email": "อีเมล",
+        "address": "ที่อยู่",
+        "addressValue": "59 ตำบลกระแสสินธุ์ จังหวัดสงขลา ประเทศไทย",
+        "github": "GitHub"
+    },
+    "skills": {
+        "title": "ทักษะ",
+        "languagesFrameworks": "ภาษาและเฟรมเวิร์ก",
+        "database": "ฐานข้อมูล",
+        "mlAI": "Machine Learning & AI",
+        "tools": "เครื่องมือ"
+    },
+    "experience": {
+        "title": "ประสบการณ์",
+        "technologiesUsed": "เทคโนโลยีที่ใช้",
+        "noExperience": "ยังไม่มีประสบการณ์ที่แสดงในขณะนี้",
+        "items": [
+            {
+                "type": "สหกิจศึกษา",
+                "company": "EILA (Education and Innovative Learning Academy)",
+                "role": "Web and Mobile Developer (สหกิจศึกษา)",
+                "duration": "17 เมษายน 2568 – 6 มิถุนายน 2568 (1 เดือน 20 วัน)",
+                "description": [
+                    "พัฒนาและบูรณาการเว็บแอปพลิเคชันแบบ Full-Stack สำหรับระบบจองบูธ โดยใช้ HTML, Tailwind CSS, JavaScript และ Node.js",
+                    "จัดการฐานข้อมูล PostgreSQL และจัดทำเอกสาร Software Requirements Specification (SRS)",
+                    "ได้รับประสบการณ์จริงจากการใช้ platform deploy (Railway, Render) และเครื่องมือจัดการฐานข้อมูล (pgAdmin)",
+                    "พัฒนาทักษะการนำเสนอและการรายงานความคืบหน้าผ่านการอัปเดตโปรเจคสม่ำเสมอ"
+                ],
+                "technologies": [
+                    "Node.js",
+                    "PostgreSQL",
+                    "JavaScript",
+                    "Tailwind CSS"
+                ]
+            },
+            {
+                "type": "ฝึกงาน",
+                "company": "มหาวิทยาลัยสงขลานครินทร์ — คณะ ICT",
+                "role": "นักพัฒนาซอฟต์แวร์ (โครงการสหกิจศึกษา)",
+                "duration": "มิถุนายน 2568 – สิงหาคม 2568 (กำลังดำเนินการ)",
+                "description": [
+                    "ร่วมพัฒนาเครื่องมือจัดการวิชาการแบบ web-based กับทีมพัฒนาภายในมหาวิทยาลัย",
+                    "มีส่วนร่วมในการพัฒนา frontend ด้วย React และช่วย integrate API กับ backend",
+                    "เข้าร่วม Agile sprints, code review และกระบวนการจัดทำเอกสาร"
+                ],
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "REST API",
+                    "Git"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "โปรเจค",
+        "inProgress": "กำลังดำเนินการ",
+        "seniorProject": "โปรเจคจบ",
+        "courseProject": "โปรเจครายวิชา",
+        "technologiesUsed": "เทคโนโลยีที่ใช้",
+        "kaggleModel": "โมเดล Kaggle",
+        "projectReport": "รายงานโปรเจค",
+        "gitHub": "GitHub",
+        "figma": "Figma",
+        "showMore": "ดูอีก {{count}} โปรเจค",
+        "showLess": "ย่อกลับ",
+        "viewImage": "ดูรูปขนาดใหญ่",
+        "items": [
+            {
+                "title": "Tomato Leaf Disease Classifier (CNN) 2025",
+                "featured": true,
+                "inProgress": false,
+                "isSeniorProject": true,
+                "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=600&q=80",
+                "description": [
+                    "ออกแบบเว็บแอปสำหรับจำแนกโรคใบมะเขือเทศโดยใช้ CNN (InceptionV3 & EfficientNetB0)",
+                    "เทรนโมเดลด้วย dataset ที่สร้างเอง 3,000 ภาพ (3 class) ผ่าน Kaggle พร้อม image augmentation และ transfer learning",
+                    "พัฒนาด้วย React (frontend), FastAPI (backend) และ PostgreSQL",
+                    "ฟีเจอร์ครอบคลุมการอัปโหลดภาพ, ประวัติการพยากรณ์ และการจัดการโรคสำหรับ admin ด้วย role-based access"
+                ],
+                "technologies": "Python, JavaScript, React.js, FastAPI, PostgreSQL, TensorFlow, InceptionV3, EfficientNetB0, Material UI (MUI), Git",
+                "links": {
+                    "kaggle": "https://www.kaggle.com/code/kongkityeesai/tomato-leaf-disease"
+                }
+            },
+            {
+                "title": "PSU Parking 2024",
+                "featured": true,
+                "inProgress": false,
+                "isCourseProject": true,
+                "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&q=80",
+                "description": [
+                    "พัฒนาเว็บแอปพลิเคชันช่วยผู้ใช้หาที่จอดรถใน ม.อ. โดย integrate Google Maps API สำหรับนำทางแบบ real-time",
+                    "สร้าง RESTful API ด้วย Node.js และ Express.js จัดการข้อมูลที่จอดรถในรูปแบบ JSON",
+                    "ออกแบบฟังก์ชันค้นหาและกรองข้อมูลเพื่อยกระดับ user experience"
+                ],
+                "technologies": "Node.js, Express.js, Google Maps API, JSON, HTML, CSS, JavaScript",
+                "links": {
+                    "report": "psu_parking",
+                    "github": "https://github.com/Kongkitqq/Psu-parking"
+                }
+            },
+            {
+                "title": "AlertRadar ระบบตรวจจับวัตถุและตรวจสอบคุณภาพอากาศ 2024",
+                "featured": true,
+                "inProgress": false,
+                "isCourseProject": true,
+                "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+                "description": [
+                    "ออกแบบและพัฒนาระบบ IoT สำหรับตรวจจับวัตถุและตรวจสอบคุณภาพอากาศแบบ real-time",
+                    "ใช้เซนเซอร์ HC-SR04, MQ-135 และ ESP8266 สำหรับการเชื่อมต่อ Wi-Fi เก็บข้อมูล และส่งการแจ้งเตือน",
+                    "เชื่อมต่อ LINE API สำหรับการแจ้งเตือนแบบ real-time และจัดเก็บข้อมูลบน ThingSpeak เพื่อวิเคราะห์"
+                ],
+                "technologies": "C/C++, ESP8266, HC-SR04, MQ-135, LINE API, ThingSpeak",
+                "links": {
+                    "report": "alert_radar"
+                }
+            },
+            {
+                "title": "Startify 2024",
+                "featured": false,
+                "inProgress": false,
+                "isCourseProject": true,
+                "description": [
+                    "ออกแบบ prototype แอปมือถือสำหรับ customize รถยนต์และดูสเปคโดยละเอียด",
+                    "สร้าง user flows, wireframes, และ prototypes ด้วย Figma",
+                    "เน้น user-centered design และ responsive interface"
+                ],
+                "technologies": "Figma, Prototyping, Wireframing, UX/UI Design",
+                "links": {
+                    "figma": "https://www.figma.com/proto/8XMhHeNjUHDwJ0bciViFnI/UX%2FUI-417_560?node-id=0-1&t=j9cBAODvWFzgq4DO-1"
+                }
+            },
+            {
+                "title": "QIT 2023",
+                "featured": true,
+                "inProgress": false,
+                "isCourseProject": true,
+                "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+                "description": [
+                    "พัฒนาระบบจัดการและแสดงผลสินค้าแบบ web-based โดยใช้ React",
+                    "ออกแบบ interface สำหรับลูกค้าพร้อมระบบค้นหา, กรอง และดูรายละเอียดสินค้า",
+                    "สร้าง interface admin สำหรับจัดการ inventory รวมถึงการอัปเดตสต็อก, ราคา และรายละเอียดสินค้า",
+                    "ส่งข้อมูลระหว่าง frontend และ backend ด้วย Fetch API"
+                ],
+                "technologies": "React, JavaScript, Fetch API, HTML, CSS",
+                "links": {
+                    "github": "https://github.com/Kongkitqq/QIT-",
+                    "report": "QIT"
+                }
+            }
+        ]
+    },
+    "footer": {
+        "contactMe": "ติดต่อสอบถาม",
+        "designedBy": "ออกแบบและพัฒนาโดย",
+        "rightsReserved": "สงวนลิขสิทธิ์ทั้งหมด",
+        "scrolltoTop": "กลับไปด้านบน"
+    }
+}

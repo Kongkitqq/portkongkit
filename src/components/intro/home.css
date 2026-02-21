@@ -1,46 +1,44 @@
 /* ------------------------- */
-/* 🌍 General Section */
+/* 🌍 General Section        */
 /* ------------------------- */
 #Name {
   width: 100%;
-  max-width: 110%;
+  max-width: 100%; /* Fixed from 110% to prevent overflow */
   margin: 0 auto;
-  overflow: hidden;
   position: relative;
-  padding: 4rem 2rem; /* เพิ่ม Padding ให้ดูสมดุลขึ้น */
+  padding: 6rem 2rem; /* Adjusted padding */
   text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden; /* Prevent blob-induced scrollbars */
 }
 
+
+
 /* ------------------------- */
-/* 🔑 Kyai Animation Keyframes */
+/* 🔑 K Animation            */
 /* ------------------------- */
 @keyframes kyaiPopIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.5) translateY(20px); /* เริ่มต้นเล็กและเลื่อนขึ้นเล็กน้อย */
-  }
-  60% {
-    opacity: 1;
-    transform: scale(1.1) translateY(-5px); /* ขยายใหญ่กว่าปกติเล็กน้อยและเด้งขึ้น */
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1) translateY(0); /* กลับสู่ขนาดปกติ */
-  }
+  0%   { opacity: 0; transform: scale(0.5) translateY(20px); }
+  60%  { opacity: 1; transform: scale(1.1) translateY(-5px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
 }
 
 .Kyai {
-  font-size: clamp(3rem, 6vw, 5.5rem); /* ขยายขนาดฟ้อนต์ให้ Responsive */
+  font-size: clamp(3rem, 6vw, 5.5rem);
   font-weight: bold;
   color: #007bff;
-  text-shadow: 2px 2px 10px rgba(0, 123, 255, 0.5); /* เพิ่มเงาให้ดูโดดเด่น */
-  display: inline-block; /* เปลี่ยนเป็น inline-block เพื่อให้ transform ทำงานได้ */
-  /* --- Apply Animation --- */
-  animation: kyaiPopIn 2.7s ease-out infinite; /* เปลี่ยน 'forwards' เป็น 'infinite' เพื่อให้แอนิเมชันเล่นซ้ำตลอดเวลา */
-  transform-origin: bottom left; /* จุดหมุนของแอนิเมชัน */
+  text-shadow: 2px 2px 10px rgba(0, 123, 255, 0.5);
+  display: inline-block;
+  animation: kyaiPopIn 2.7s ease-out infinite;
+  transform-origin: bottom left;
 }
 
-
+/* ------------------------- */
+/* 📐 Layout                 */
+/* ------------------------- */
 .content-container {
   display: flex;
   flex-direction: row;
@@ -50,117 +48,286 @@
   max-width: 85%;
   margin: 0 auto;
   padding: 2rem;
+  position: relative;
+  z-index: 1;
 }
-
 
 .text-content {
   flex: 1;
-  color: white;
+  color: var(--text-primary);
   text-align: left;
   max-width: 75%;
 }
 
 .homeName {
-  font-size: clamp(2rem, 5vw, 2.8rem); /* ขยายขนาดตัวหนังสือ */
+  font-size: clamp(2rem, 5vw, 2.8rem);
   font-weight: bold;
 }
 
-.homePara {
-  font-size: 1.45rem;
-  line-height: 1.8;
-  color: #d1d1d1;
+/* ------------------------- */
+/* ⌨️ Typewriter             */
+/* ------------------------- */
+.typewriter-container {
+  margin: 0.5rem 0 1rem;
+  font-size: clamp(1rem, 2.5vw, 1.3rem);
+  color: #64b5f6;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  min-height: 1.8rem;
 }
 
+.typewriter-cursor {
+  display: inline-block;
+  margin-left: 2px;
+  animation: blink 0.75s step-end infinite;
+  color: #007bff;
+  font-weight: 300;
+}
 
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0; }
+}
+
+/* ------------------------- */
+/* 📝 Bio paragraph          */
+/* ------------------------- */
+.homePara {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+/* ------------------------- */
+/* 🔗 Social Icons           */
+/* ------------------------- */
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin: 1.2rem 0;
+}
+
+.social-icon {
+  color: var(--text-muted);
+  font-size: 1.6rem;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+  color: #007bff;
+  transform: translateY(-3px);
+}
+
+/* ------------------------- */
+/* 🖼️ Profile picture        */
+/* ------------------------- */
 .image-container {
   flex: 0.5;
   display: flex;
   justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="light"] .image-container::before {
+  content: '';
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  background: radial-gradient(circle, rgba(0, 123, 255, 0.05) 0%, transparent 70%);
+  top: -10%;
+  left: -10%;
+  z-index: 0;
+}
+
+.profile-blob {
+  width: clamp(180px, 22vw, 260px);
+  height: clamp(180px, 22vw, 260px);
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(111, 66, 219, 0.2));
+  border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  animation: blobMorph 12s ease-in-out infinite, floating 6s ease-in-out infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2; /* Main blob above bubbles */
+  transition: all 0.8s ease;
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.15);
+}
+
+[data-theme="light"] .profile-blob {
+  /* Pearl/Opal effect for light mode */
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.2), rgba(111, 66, 219, 0.2), rgba(235, 64, 52, 0.1));
+  box-shadow: 
+    0 10px 40px rgba(0, 123, 255, 0.25),
+    inset 0 0 20px rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 123, 255, 0.2);
+}
+
+/* --- Floating Bubbles Decoration --- */
+.floating-bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.15) 0%, transparent 70%);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-theme="light"] .floating-bubble {
+  /* Iridescent/Rainbow Shine for maximum visibility */
+  background: radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.9) 0%, rgba(0, 123, 255, 0.1) 40%, rgba(255, 0, 255, 0.05) 100%);
+  border: 2px solid rgba(0, 123, 255, 0.4); /* Stronger border */
+  box-shadow: 
+    0 10px 25px rgba(0, 123, 255, 0.15),
+    inset -3px -3px 8px rgba(111, 66, 219, 0.1);
+  backdrop-filter: blur(6px);
+}
+
+.bubble-1 {
+  width: 100px;
+  height: 100px;
+  top: -20px;
+  left: -30px;
+  animation: bubbleFloat 8s ease-in-out infinite;
+}
+
+.bubble-2 {
+  width: 60px;
+  height: 60px;
+  bottom: 10px;
+  right: -20px;
+  animation: bubbleFloat 6s ease-in-out infinite reverse;
+}
+
+.bubble-3 {
+  width: 40px;
+  height: 40px;
+  top: 40%;
+  right: -40px;
+  animation: bubbleFloat 10s ease-in-out infinite;
+  opacity: 0.6;
+}
+
+@keyframes bubbleFloat {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%       { transform: translate(15px, -20px) scale(1.1); }
+  66%       { transform: translate(-10px, 10px) scale(0.9); }
 }
 
 .profile-picture {
-  width: clamp(140px, 15vw, 200px); /* ปรับขนาดอัตโนมัติตามอุปกรณ์ */
-  height: clamp(140px, 15vw, 200px);
-  border-radius: 50%;
+  width: 88%;
+  height: 88%;
+  border-radius: inherit;
   object-fit: cover;
-  border: 4px solid rgb(235, 235, 235);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* เพิ่มเงาให้ดูมีมิติ */
+  border: 4px solid var(--bg-card);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  z-index: 2;
 }
 
+@keyframes blobMorph {
+  0%, 100% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
+  50%       { border-radius: 40% 60% 70% 30% / 50% 60% 30% 60%; } /* Less dramatic morph */
+}
+
+@keyframes floating {
+  0%, 100% { transform: translateY(0); }
+  50%       { transform: translateY(-10px); } /* Reduced height */
+}
+
+/* ------------------------- */
+/* 🎯 Buttons                */
+/* ------------------------- */
 .button-container {
-  margin-top: 2rem; /* เพิ่มระยะห่างด้านบนของปุ่ม */
+  margin-top: 1.5rem;
   display: flex;
-  flex-wrap: wrap; /* ให้ปุ่มขึ้นบรรทัดใหม่ได้ถ้าพื้นที่ไม่พอ */
-  gap: 1rem; /* ระยะห่างระหว่างปุ่ม */
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .btn {
-  display: inline-block;
-  padding: 16px 28px; /* เพิ่มขนาดให้ใหญ่ขึ้น */
-  font-size: 1.2rem; /* ปรับให้ใหญ่ขึ้น */
+  display: inline-flex;
+  padding: 14px 28px;
+  font-size: 1.1rem;
   font-weight: bold;
   border: none;
   border-radius: 30px;
   cursor: pointer;
   text-decoration: none;
-  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
+  gap: 10px;
   transition: all 0.3s ease-in-out, transform 0.2s ease-in-out;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
-  min-width: 180px; /* กำหนดความกว้างขั้นต่ำให้ปุ่ม */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+  min-width: 170px;
   text-align: center;
 }
 
 .btn-resume {
-  background-color: #007bff;
+  background: linear-gradient(135deg, #007bff, #0056b3);
   color: white;
 }
 
-/* ปุ่ม Transcript (สีเขียว) */
-.btn-transcript {
-  background-color: #28a745;
-  color: white;
-}
-
-/* ------------------------- */
-/* 🎯 เอฟเฟกต์ Hover & Active */
-/* ------------------------- */
-.btn:hover {
-  transform: scale(1.08);
-  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
-}
-
-/* ปรับสีปุ่มเมื่อ Hover */
 .btn-resume:hover {
-  background-color: #0056b3;
+  background: linear-gradient(135deg, #0056b3, #003d82);
+  transform: scale(1.06);
+  box-shadow: 0px 8px 20px rgba(0, 123, 255, 0.4);
+}
+
+.btn-transcript {
+  background: linear-gradient(135deg, #28a745, #1e7e34);
+  color: white;
 }
 
 .btn-transcript:hover {
-  background-color: #218838;
+  background: linear-gradient(135deg, #1e7e34, #155724);
+  transform: scale(1.06);
+  box-shadow: 0px 8px 20px rgba(40, 167, 69, 0.4);
 }
 
-/* เอฟเฟกต์เมื่อกดปุ่ม */
 .btn:active {
   transform: scale(0.95);
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* ------------------------- */
-/* 📱 Responsive Adjustments */
+/* ⬇️ Scroll Indicator       */
+/* ------------------------- */
+.scroll-indicator {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.scroll-arrow {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.4);
+  animation: bounce 2s ease-in-out infinite;
+  display: block;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0);    opacity: 0.4; }
+  50%       { transform: translateY(10px); opacity: 0.9; }
+}
+
+/* ------------------------- */
+/* 📱 Responsive (768px)     */
 /* ------------------------- */
 @media screen and (max-width: 768px) {
   #Name {
-    padding: 2rem 1rem; /* ลด padding บนมือถือ */
+    padding: 5rem 1rem 4rem;
   }
 
   .content-container {
-    flex-direction: column; /* เปลี่ยนเป็นแนวตั้งบนมือถือ */
+    flex-direction: column;
     text-align: center;
-    gap: 1rem;
-    padding: 1rem; /* ลด padding */
-    max-width: 95%; /* ขยายความกว้าง */
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 100%; /* Full width on mobile */
   }
 
   .text-content {
@@ -168,41 +335,45 @@
     text-align: center;
   }
 
+  .social-links {
+    justify-content: center;
+  }
+
   .image-container {
-    max-width: 100%;
-    margin-top: 1rem;
-    order: -1; /* ย้ายรูปภาพไปอยู่ด้านบน */
+    order: -1;
   }
 
   .profile-picture {
-    width: 120px;
-    height: 120px;
+    width: 130px;
+    height: 130px;
   }
 
   .homeName {
-    font-size: clamp(1.8rem, 8vw, 2.5rem); /* ปรับขนาดชื่อให้เล็กลง */
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
   }
 
   .Kyai {
-    font-size: clamp(2.5rem, 10vw, 4rem); /* ปรับขนาด K ให้เล็กลง */
+    font-size: clamp(2.5rem, 10vw, 4rem);
   }
 
   .homePara {
-    font-size: 1.1rem; /* ลดขนาดข้อความ */
-    line-height: 1.6;
+    font-size: 1rem;
+    line-height: 1.7;
   }
 
   .button-container {
-    flex-direction: column; /* ให้ปุ่มเรียงเป็นคอลัมน์ */
+    flex-direction: column;
     gap: 0.8rem;
-    margin-top: 1.5rem;
+    margin-top: 1.2rem;
+    align-items: center;
   }
 
   .btn {
     font-size: 1rem;
     padding: 12px 20px;
-    min-width: unset; /* ลบ min-width เพื่อให้ปุ่มปรับขนาดได้เต็มที่ */
-    width: 100%; /* ทำให้ปุ่มเต็มความกว้าง */
+    min-width: unset;
+    width: 100%;
+    max-width: 280px;
   }
 }
 

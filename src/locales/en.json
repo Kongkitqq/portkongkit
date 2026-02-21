@@ -1,0 +1,189 @@
+{
+    "navbar": {
+        "home": "Home",
+        "skills": "Skills",
+        "about": "About",
+        "experience": "Experience",
+        "project": "Project",
+        "downloadResume": "📄 Download Resume"
+    },
+    "home": {
+        "bio": "I'm a fourth-year ICT student at Prince of Songkla University, currently seeking a cooperative internship opportunity in roles such as frontend developer, backend developer, full-stack developer, or in the field of machine learning. I'm eager to gain hands-on experience, learn from real-world projects, and continuously improve my skills through professional collaboration and development challenges.",
+        "viewResume": "View Resume",
+        "viewTranscript": "View Transcript"
+    },
+    "about": {
+        "title": "About",
+        "personal": "Personal",
+        "name": "Name",
+        "nameValue": "Mr. Kongkit Yeesai (Ikkiw)",
+        "age": "Age",
+        "ageValue": "21",
+        "education": "Education",
+        "educationValue": "Bachelor of Science in Information and Communication Technology (ICT)",
+        "university": "University",
+        "universityValue": "Prince of Songkla University, Hat Yai Campus",
+        "gpax": "GPAX",
+        "gpaxValue": "3.57 | 4th-Year Student",
+        "contact": "Contact Information",
+        "phone": "Phone",
+        "email": "Email",
+        "address": "Address",
+        "addressValue": "59, Krasae Sin, Songkhla, Thailand",
+        "github": "GitHub"
+    },
+    "skills": {
+        "title": "Skills",
+        "languagesFrameworks": "Languages & Frameworks",
+        "database": "Database",
+        "mlAI": "Machine Learning & AI",
+        "tools": "Tools"
+    },
+    "experience": {
+        "title": "Experience",
+        "technologiesUsed": "Technologies Used",
+        "noExperience": "No experience to display at this time.",
+        "items": [
+            {
+                "type": "Co-op",
+                "company": "EILA (Education and Innovative Learning Academy)",
+                "role": "Web and Mobile Developer (Co-op)",
+                "duration": "17 April 2025 – 6 June 2025 (1 Month 20 Days)",
+                "description": [
+                    "Developed and integrated full-stack web applications for a booth reservation system using HTML, Tailwind CSS, JavaScript, and Node.js.",
+                    "Managed PostgreSQL databases and created Software Requirements Specification (SRS) documents to guide project development.",
+                    "Gained practical experience with deployment platforms (Railway, Render) and database management tools (pgAdmin).",
+                    "Enhanced presentation and progress reporting skills through regular project updates."
+                ],
+                "technologies": [
+                    "Node.js",
+                    "PostgreSQL",
+                    "JavaScript",
+                    "Tailwind CSS"
+                ]
+            },
+            {
+                "type": "Internship",
+                "company": "Prince of Songkla University — Faculty of ICT",
+                "role": "Software Developer Intern (Cooperative Education Program)",
+                "duration": "June 2025 – August 2025 (In Progress)",
+                "description": [
+                    "Collaborated with the university's internal development team on web-based academic management tools.",
+                    "Contributed to frontend development using React and assisted in API integration with backend services.",
+                    "Participated in Agile sprints, code reviews, and documentation processes."
+                ],
+                "technologies": [
+                    "React",
+                    "Node.js",
+                    "REST API",
+                    "Git"
+                ]
+            }
+        ]
+    },
+    "projects": {
+        "title": "Projects",
+        "inProgress": "In Progress",
+        "seniorProject": "Senior Project",
+        "courseProject": "Course Project",
+        "technologiesUsed": "Technologies Used",
+        "kaggleModel": "Kaggle Model",
+        "projectReport": "Project Report",
+        "gitHub": "GitHub",
+        "figma": "Figma",
+        "showMore": "Show {{count}} more projects",
+        "showLess": "Show less",
+        "viewImage": "View Large Image",
+        "items": [
+            {
+                "title": "Tomato Leaf Disease Classifier (CNN) 2025",
+                "featured": true,
+                "inProgress": false,
+                "isSeniorProject": true,
+                "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=600&q=80",
+                "description": [
+                    "Designing a web app to classify tomato leaf diseases using CNN (InceptionV3 & EfficientNetB0).",
+                    "Models are trained on a custom dataset of 3,000 images (3 classes) via Kaggle, with image augmentation and transfer learning.",
+                    "Built with React (frontend), FastAPI (backend), and PostgreSQL.",
+                    "Features include user image upload, prediction history, and admin disease management with role-based access."
+                ],
+                "technologies": "Python, JavaScript, React.js, FastAPI, PostgreSQL, TensorFlow, InceptionV3, EfficientNetB0, Material UI (MUI), Git",
+                "links": {
+                    "kaggle": "https://www.kaggle.com/code/kongkityeesai/tomato-leaf-disease"
+                }
+            },
+            {
+                "title": "PSU Parking 2024",
+                "featured": true,
+                "inProgress": false,
+                "isCourseProject": true,
+                "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&q=80",
+                "description": [
+                    "Developed a web-based application to assist users in locating parking spots at PSU, integrating Google Maps API for real-time navigation.",
+                    "Built RESTful APIs using Node.js and Express.js to manage parking data in JSON format.",
+                    "Designed search and filter functionalities to enhance user experience."
+                ],
+                "technologies": "Node.js, Express.js, Google Maps API, JSON, HTML, CSS, JavaScript",
+                "links": {
+                    "report": "psu_parking",
+                    "github": "https://github.com/Kongkitqq/Psu-parking"
+                }
+            },
+            {
+                "title": "AlertRadar Object Detection and Air Quality Monitoring System 2024",
+                "featured": true,
+                "inProgress": false,
+                "isCourseProject": true,
+                "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+                "description": [
+                    "Designed and implemented an IoT-based system to detect objects and monitor air quality in real-time.",
+                    "Used sensors HC-SR04, MQ-135 and ESP8266 for Wi-Fi connectivity to collect data and send alerts.",
+                    "Integrated LINE API for real-time notifications and stored data on ThingSpeak for visualization and analysis."
+                ],
+                "technologies": "C/C++, ESP8266, HC-SR04, MQ-135, LINE API, ThingSpeak",
+                "links": {
+                    "report": "alert_radar"
+                }
+            },
+            {
+                "title": "Startify 2024",
+                "featured": false,
+                "inProgress": false,
+                "isCourseProject": true,
+                "description": [
+                    "Designed a mobile application prototype allowing users to customize cars and view detailed specifications.",
+                    "Created user flows, wireframes, and prototypes using Figma.",
+                    "Focused on user-centered design principles and responsive interface layouts."
+                ],
+                "technologies": "Figma, Prototyping, Wireframing, UX/UI Design",
+                "links": {
+                    "figma": "https://www.figma.com/proto/8XMhHeNjUHDwJ0bciViFnI/UX%2FUI-417_560?node-id=0-1&t=j9cBAODvWFzgq4DO-1"
+                }
+            },
+            {
+                "title": "QIT 2023",
+                "featured": true,
+                "inProgress": false,
+                "isCourseProject": true,
+                "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+                "description": [
+                    "Developed a web-based system for managing and displaying products using React for the frontend.",
+                    "Designed a customer interface for browsing products with search, filter, and detailed product views.",
+                    "Built an admin interface to manage product inventory, including updates for stock, prices, and product descriptions.",
+                    "Used Fetch API for data transfer between the frontend and backend."
+                ],
+                "technologies": "React, JavaScript, Fetch API, HTML, CSS",
+                "links": {
+                    "github": "https://github.com/Kongkitqq/QIT-",
+                    "report": "QIT"
+                }
+            }
+        ]
+    },
+    "footer": {
+        "contactMe": "Contact Me",
+        "designedBy": "Designed & Built by",
+        "rightsReserved": "All Rights Reserved.",
+        "scrolltoTop": "Scroll to Top"
+    }
+}

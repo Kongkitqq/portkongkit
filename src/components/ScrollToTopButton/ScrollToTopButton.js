@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./ScrollToTopButton.css"; // นำเข้าไฟล์ CSS
+import "./ScrollToTopButton.css";
 
 const ScrollToTopButton = () => {
   const [visible, setVisible] = useState(false);
@@ -20,9 +20,10 @@ const ScrollToTopButton = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`scrollToTopBtn ${visible ? "show" : "hide"}`} // ใช้ className แทน style
+      className={`scrollToTopBtn ${visible ? "show" : ""}`}
+      aria-label="Scroll to top"
     >
-      ↑ Top
+      ↑
     </button>
   );
 };
