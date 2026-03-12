@@ -24,15 +24,6 @@ const Experience = () => {
                   <li key={idx}>{point}</li>
                 ))}
               </ul>
-              <div className="experience-tech">
-                <div className="tech-tags">
-                  {internship.technologies.map((tech, idx) => (
-                    <span key={idx} className="tech-tag">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
             </div>
           ))
         ) : (

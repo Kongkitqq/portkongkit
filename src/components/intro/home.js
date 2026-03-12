@@ -9,10 +9,9 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
 const TITLES = [
-  "Frontend Developer",
   "Backend Developer",
   "Full-Stack Developer",
-  "ML Enthusiast",
+  "Software Engineer",
 ];
 
 export const Home = () => {
@@ -110,11 +109,6 @@ export const Home = () => {
           <div className="floating-bubble bubble-2"></div>
           <div className="floating-bubble bubble-3"></div>
         </div>
-      </div>
-
-      {/* Scroll down indicator */}
-      <div className="scroll-indicator">
-        <span className="scroll-arrow">↓</span>
       </div>
     </section>
   );

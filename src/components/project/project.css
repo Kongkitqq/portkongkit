@@ -326,6 +326,33 @@
   border-color: #0b9fdf;
 }
 
+/* Demo / Live site button */
+.demo-btn {
+  background: linear-gradient(135deg, #00b894, #00cec9);
+  color: #fff;
+  border: 1px solid #00b894;
+  font-weight: 700;
+}
+
+.demo-btn:hover {
+  background: linear-gradient(135deg, #00a381, #00b5b0);
+  border-color: #00a381;
+}
+
+/* Work Scholarship tag */
+.work-scholarship-tag {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #f39c12, #e67e22);
+    color: #fff;
+    font-size: 0.78rem;
+    font-weight: 700;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0 8px 0 8px;
+    letter-spacing: 0.03em;
+}
+
 /* --- Show More / Less toggle --- */
 .project-toggle-wrapper {
   display: flex;

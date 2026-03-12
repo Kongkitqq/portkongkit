@@ -8,7 +8,7 @@
         "downloadResume": "📄 Download Resume"
     },
     "home": {
-        "bio": "I'm a fourth-year ICT student at Prince of Songkla University, currently seeking a cooperative internship opportunity in roles such as frontend developer, backend developer, full-stack developer, or in the field of machine learning. I'm eager to gain hands-on experience, learn from real-world projects, and continuously improve my skills through professional collaboration and development challenges.",
+        "bio": "As a soon-to-graduate ICT student at Prince of Songkla University, I bring practical backend experience from a tech co-op and internships. I am skilled in building APIs (Node.js, FastAPI), managing databases, and integrating AI models into web apps. With hands-on experience delivering production-ready modules via Git, I am a team player eager to learn and seeking a Junior Backend or Software Engineer role.",
         "viewResume": "View Resume",
         "viewTranscript": "View Transcript"
     },
@@ -18,13 +18,13 @@
         "name": "Name",
         "nameValue": "Mr. Kongkit Yeesai (Ikkiw)",
         "age": "Age",
-        "ageValue": "21",
+        "ageValue": "22",
         "education": "Education",
         "educationValue": "Bachelor of Science in Information and Communication Technology (ICT)",
         "university": "University",
         "universityValue": "Prince of Songkla University, Hat Yai Campus",
         "gpax": "GPAX",
-        "gpaxValue": "3.57 | 4th-Year Student",
+        "gpaxValue": "3.62",
         "contact": "Contact Information",
         "phone": "Phone",
         "email": "Email",
@@ -45,38 +45,41 @@
         "noExperience": "No experience to display at this time.",
         "items": [
             {
-                "type": "Co-op",
-                "company": "EILA (Education and Innovative Learning Academy)",
-                "role": "Web and Mobile Developer (Co-op)",
-                "duration": "17 April 2025 – 6 June 2025 (1 Month 20 Days)",
+                "type": "Cooperative",
+                "company": "Internet Thailand Public Company Limited (INET)",
+                "role": "Software Trainee (Co-op)",
+                "duration": "November 10, 2025 – March 6, 2026",
                 "description": [
-                    "Developed and integrated full-stack web applications for a booth reservation system using HTML, Tailwind CSS, JavaScript, and Node.js.",
-                    "Managed PostgreSQL databases and created Software Requirements Specification (SRS) documents to guide project development.",
-                    "Gained practical experience with deployment platforms (Railway, Render) and database management tools (pgAdmin).",
-                    "Enhanced presentation and progress reporting skills through regular project updates."
+                    "Developed Node.js backend APIs for an internal evaluation system (\"Challenge Period\") and integrated them with existing HR modules.",
+                    "Managed MongoDB databases for evaluation forms and tested APIs using Postman to ensure correct functionality.",
+                    "Helped transform a manual paper-based process into a fully digital system with real-time status tracking.",
+                    "Collaborated via Git for version control and successfully delivered the module for deployment to the production environment."
                 ],
                 "technologies": [
                     "Node.js",
-                    "PostgreSQL",
-                    "JavaScript",
-                    "Tailwind CSS"
+                    "Vue.js",
+                    "Go (Fiber)",
+                    "Docker",
+                    "MongoDB",
+                    "Git"
                 ]
             },
             {
                 "type": "Internship",
-                "company": "Prince of Songkla University — Faculty of ICT",
-                "role": "Software Developer Intern (Cooperative Education Program)",
-                "duration": "June 2025 – August 2025 (In Progress)",
+                "company": "Education and Innovative Learning Academy (EILA)",
+                "role": "Web and Mobile Developer Intern",
+                "duration": "April 17, 2025 – June 6, 2025",
                 "description": [
-                    "Collaborated with the university's internal development team on web-based academic management tools.",
-                    "Contributed to frontend development using React and assisted in API integration with backend services.",
-                    "Participated in Agile sprints, code reviews, and documentation processes."
+                    "Developed and integrated full-stack web applications for a booth reservation system using HTML, Tailwind CSS, JavaScript, and Node.js.",
+                    "Managed PostgreSQL databases and created Software Requirements Specification (SRS) documents to guide project development.",
+                    "Gained practical experience with deployment platforms (Railway, Render) and database management tools (pgAdmin)."
                 ],
                 "technologies": [
-                    "React",
+                    "HTML",
+                    "Tailwind CSS",
+                    "JavaScript",
                     "Node.js",
-                    "REST API",
-                    "Git"
+                    "PostgreSQL"
                 ]
             }
         ]
@@ -86,38 +89,54 @@
         "inProgress": "In Progress",
         "seniorProject": "Senior Project",
         "courseProject": "Course Project",
+        "workScholarship": "Work Scholarship",
         "technologiesUsed": "Technologies Used",
         "kaggleModel": "Kaggle Model",
         "projectReport": "Project Report",
         "gitHub": "GitHub",
         "figma": "Figma",
+        "liveDemo": "Live Demo",
         "showMore": "Show {{count}} more projects",
         "showLess": "Show less",
         "viewImage": "View Large Image",
         "items": [
             {
-                "title": "Tomato Leaf Disease Classifier (CNN) 2025",
+                "title": "Tomato Leaf Disease Classifier (CNN) — Final Project 2025",
                 "featured": true,
                 "inProgress": false,
                 "isSeniorProject": true,
-                "image": "https://images.unsplash.com/photo-1592838064575-70ed626d3a0e?w=600&q=80",
+                "image": "project1",
                 "description": [
                     "Designing a web app to classify tomato leaf diseases using CNN (InceptionV3 & EfficientNetB0).",
-                    "Models are trained on a custom dataset of 3,000 images (3 classes) via Kaggle, with image augmentation and transfer learning.",
+                    "Models are trained on a custom dataset of 10,000 images (6 classes) via Kaggle, with image augmentation and transfer learning.",
                     "Built with React (frontend), FastAPI (backend), and PostgreSQL.",
                     "Features include user image upload, prediction history, and admin disease management with role-based access."
                 ],
                 "technologies": "Python, JavaScript, React.js, FastAPI, PostgreSQL, TensorFlow, InceptionV3, EfficientNetB0, Material UI (MUI), Git",
                 "links": {
+                    "demo": "https://tomato-leaf-classificationqq.vercel.app/",
                     "kaggle": "https://www.kaggle.com/code/kongkityeesai/tomato-leaf-disease"
                 }
+            },
+            {
+                "title": "Image Segmentation Web Application 2025",
+                "featured": true,
+                "inProgress": false,
+                "isWorkScholarship": true,
+                "image": "project2",
+                "description": [
+                    "Built a full-stack web app for Image Segmentation — users upload images and the system uses AI to automatically segment objects, displaying color-coded overlay results for analysis and model comparison. Built with React + Vite and FastAPI.",
+                    "Integrated 4 models: DeepLabV3, FCN, LRASPP (Semantic) and Mask R-CNN (Instance) with PyTorch and ONNX Runtime. Supported batch upload, per-image model selection, and side-by-side comparison."
+                ],
+                "technologies": "Python, JavaScript, React.js, Vite, FastAPI, PyTorch, ONNX Runtime, DeepLabV3, FCN, LRASPP, Mask R-CNN",
+                "links": {}
             },
             {
                 "title": "PSU Parking 2024",
                 "featured": true,
                 "inProgress": false,
                 "isCourseProject": true,
-                "image": "https://images.unsplash.com/photo-1506521781263-d8422e82f27a?w=600&q=80",
+                "image": "project3",
                 "description": [
                     "Developed a web-based application to assist users in locating parking spots at PSU, integrating Google Maps API for real-time navigation.",
                     "Built RESTful APIs using Node.js and Express.js to manage parking data in JSON format.",
@@ -134,7 +153,7 @@
                 "featured": true,
                 "inProgress": false,
                 "isCourseProject": true,
-                "image": "https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&q=80",
+                "image": "project4",
                 "description": [
                     "Designed and implemented an IoT-based system to detect objects and monitor air quality in real-time.",
                     "Used sensors HC-SR04, MQ-135 and ESP8266 for Wi-Fi connectivity to collect data and send alerts.",
@@ -150,6 +169,7 @@
                 "featured": false,
                 "inProgress": false,
                 "isCourseProject": true,
+                "image": "project5",
                 "description": [
                     "Designed a mobile application prototype allowing users to customize cars and view detailed specifications.",
                     "Created user flows, wireframes, and prototypes using Figma.",
@@ -162,10 +182,10 @@
             },
             {
                 "title": "QIT 2023",
-                "featured": true,
+                "featured": false,
                 "inProgress": false,
                 "isCourseProject": true,
-                "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80",
+                "image": "project6",
                 "description": [
                     "Developed a web-based system for managing and displaying products using React for the frontend.",
                     "Designed a customer interface for browsing products with search, filter, and detailed product views.",

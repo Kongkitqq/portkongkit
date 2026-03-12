@@ -16,36 +16,30 @@ export const Skills = () => {
             </h3>
             <ul className="skills-items">
               <li className="skills-item">
-                Python, C, JavaScript, HTML/CSS, SQL
+                Python, JavaScript, HTML/CSS, SQL, C, Go
               </li>
-              <li className="skills-item">
-                React, Node.js, FastAPI, Tailwind CSS, Material UI (MUI)
-              </li>
+              <li className="skills-item">Node.js, React, Vue.js, FastAPI</li>
             </ul>
 
             <h3 className="skills-heading">{t("skills.database")}</h3>
             <ul className="skills-items">
-              <li className="skills-item">PostgreSQL, MySQL</li>
-            </ul>
-
-            <h3 className="skills-heading">{t("skills.mlAI")}</h3>
-            <ul className="skills-items">
-              <li className="skills-item">
-                TensorFlow, PyTorch, scikit-learn, Keras, Pandas, NumPy
-              </li>
+              <li className="skills-item">PostgreSQL, MySQL, MongoDB</li>
             </ul>
           </div>
 
           <div className="software-list">
+            <h3 className="skills-heading">{t("skills.mlAI")}</h3>
+            <ul className="skills-items">
+              <li className="skills-item">
+                TensorFlow, scikit-learn, Keras, Pandas, NumPy
+              </li>
+            </ul>
+
             <h3 className="skills-heading">{t("skills.tools")}</h3>
             <ul className="skills-items">
               <li className="skills-item">
-                Git, Postman, Swagger, Figma, Jira, Visual Studio Code
+                Git, Docker, Postman, Swagger, Figma, Jira
               </li>
-              <li className="skills-item">
-                Jupyter Notebook, Anaconda, Kaggle
-              </li>
-              <li className="skills-item">Railway, Render, pgAdmin</li>
             </ul>
           </div>
         </div>
