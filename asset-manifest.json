@@ -1,19 +1,25 @@
 {
   "files": {
-    "main.css": "/portkongkit/static/css/main.7f8a1b4e.css",
-    "main.js": "/portkongkit/static/js/main.86c6c690.js",
+    "main.css": "/portkongkit/static/css/main.f6f3993d.css",
+    "main.js": "/portkongkit/static/js/main.9a6bb188.js",
+    "static/media/profile.png": "/portkongkit/static/media/profile.147b0911e7e1c2aed097.png",
     "static/media/iot.pdf": "/portkongkit/static/media/iot.5f7e4a2dec33534a4c7c.pdf",
     "static/media/Psu_parking.pdf": "/portkongkit/static/media/Psu_parking.80a5975e5d2f27f82744.pdf",
     "static/media/ProjectReport.pdf": "/portkongkit/static/media/ProjectReport.170b9110444d3a086331.pdf",
-    "static/media/Tran.pdf": "/portkongkit/static/media/Tran.5d3fd27b6281c73f3298.pdf",
-    "static/media/Resume_Kongkit_Yeesai.pdf": "/portkongkit/static/media/Resume_Kongkit_Yeesai.5d3d56d209d6443956e5.pdf",
-    "static/media/profile.png": "/portkongkit/static/media/profile.67a631d8547874784421.png",
+    "static/media/Resume_Kongkit_Yeesai.pdf": "/portkongkit/static/media/Resume_Kongkit_Yeesai.3eecc34f6370fa56ede4.pdf",
+    "static/media/project2.png": "/portkongkit/static/media/project2.3650c898dcc8fa72fadf.png",
+    "static/media/project5.png": "/portkongkit/static/media/project5.4b4150eb2b1cbc878b30.png",
+    "static/media/project3.png": "/portkongkit/static/media/project3.541000891faae18cfcc6.png",
+    "static/media/project6.png": "/portkongkit/static/media/project6.e8fde4b4369bdc448081.png",
+    "static/media/Tran.pdf": "/portkongkit/static/media/Tran.bcb982c14b06013a9200.pdf",
+    "static/media/project1.png": "/portkongkit/static/media/project1.308c17a8a6727781c74b.png",
+    "static/media/project4.png": "/portkongkit/static/media/project4.87356acbcb028a185e12.png",
     "index.html": "/portkongkit/index.html",
-    "main.7f8a1b4e.css.map": "/portkongkit/static/css/main.7f8a1b4e.css.map",
-    "main.86c6c690.js.map": "/portkongkit/static/js/main.86c6c690.js.map"
+    "main.f6f3993d.css.map": "/portkongkit/static/css/main.f6f3993d.css.map",
+    "main.9a6bb188.js.map": "/portkongkit/static/js/main.9a6bb188.js.map"
   },
   "entrypoints": [
-    "static/css/main.7f8a1b4e.css",
-    "static/js/main.86c6c690.js"
+    "static/css/main.f6f3993d.css",
+    "static/js/main.9a6bb188.js"
   ]
 }
