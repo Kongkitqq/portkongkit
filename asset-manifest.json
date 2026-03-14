@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portkongkit/static/css/main.f6f3993d.css",
-    "main.js": "/portkongkit/static/js/main.913637a2.js",
+    "main.css": "/portkongkit/static/css/main.18907522.css",
+    "main.js": "/portkongkit/static/js/main.13e8eee4.js",
     "static/media/profile.png": "/portkongkit/static/media/profile.147b0911e7e1c2aed097.png",
     "static/media/iot.pdf": "/portkongkit/static/media/iot.5f7e4a2dec33534a4c7c.pdf",
     "static/media/Psu_parking.pdf": "/portkongkit/static/media/Psu_parking.80a5975e5d2f27f82744.pdf",
@@ -15,11 +15,11 @@
     "static/media/project1.png": "/portkongkit/static/media/project1.308c17a8a6727781c74b.png",
     "static/media/project4.png": "/portkongkit/static/media/project4.87356acbcb028a185e12.png",
     "index.html": "/portkongkit/index.html",
-    "main.f6f3993d.css.map": "/portkongkit/static/css/main.f6f3993d.css.map",
-    "main.913637a2.js.map": "/portkongkit/static/js/main.913637a2.js.map"
+    "main.18907522.css.map": "/portkongkit/static/css/main.18907522.css.map",
+    "main.13e8eee4.js.map": "/portkongkit/static/js/main.13e8eee4.js.map"
   },
   "entrypoints": [
-    "static/css/main.f6f3993d.css",
-    "static/js/main.913637a2.js"
+    "static/css/main.18907522.css",
+    "static/js/main.13e8eee4.js"
   ]
 }
