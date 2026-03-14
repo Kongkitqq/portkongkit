@@ -43,10 +43,17 @@ const Project = () => {
 
   return (
     <section className="project-section">
-      <span className="projectTitle">{t("projects.title")}</span>
+      <span className="projectTitle" data-aos="fade-up">
+        {t("projects.title")}
+      </span>
       <div className="project-container">
         {visible.map((project, index) => (
-          <div className="project-list" key={index}>
+          <div
+            className="project-list"
+            key={index}
+            data-aos="fade-up"
+            data-aos-delay={(index % 3) * 100}
+          >
             {project.image && (
               <div
                 className="project-image-container"

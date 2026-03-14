@@ -47,7 +47,11 @@ export const Home = () => {
   return (
     <section id="Name">
       <div className="content-container">
-        <div className="text-content">
+        <div
+          className="text-content"
+          data-aos="fade-right"
+          data-aos-duration="1000"
+        >
           <span className="homeName">
             <span className="Kyai">K</span>ongkit Yeesai
           </span>
@@ -100,7 +104,12 @@ export const Home = () => {
           </div>
         </div>
 
-        <div className="image-container">
+        <div
+          className="image-container"
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-delay="200"
+        >
           <div className="profile-blob">
             <img src={bg} alt="Profile" className="profile-picture" />
           </div>

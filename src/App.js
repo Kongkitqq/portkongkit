@@ -6,14 +6,21 @@ import Abount from "./components/About/about";
 import Experience from "./components/Experience/experience";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import Project from "./components/project/project";
-
 import Footer from "./components/Footer/Footer";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
   const [theme, setTheme] = useState("dark");
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: false,
+      offset: 100,
+    });
   }, [theme]);
 
   const toggleTheme = () => {

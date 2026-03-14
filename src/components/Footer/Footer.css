@@ -4,7 +4,7 @@
     -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 2.5rem 2rem 1.5rem;
-    color: var(--text-primary);
+    color: #ffffff;
     position: relative;
     z-index: 10;
     margin-top: 3rem; /* Ensure space after the last section */
@@ -31,7 +31,7 @@
 }
 
 .footer-brand p {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 0.95rem;
 }
 
@@ -39,7 +39,7 @@
 .footer-social h4 {
     font-size: 1.1rem;
     margin-bottom: 1.2rem;
-    color: var(--text-primary);
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
@@ -57,7 +57,7 @@
 }
 
 .contact-item a {
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.8);
     text-decoration: none;
     transition: color 0.3s ease;
 }
@@ -72,7 +72,7 @@
 }
 
 .social-icons a {
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.6);
     font-size: 1.5rem;
     transition: all 0.3s ease;
 }
@@ -89,7 +89,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 1.5rem;
     font-size: 0.9rem;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.6);
 }
 
 .scroll-up-btn {

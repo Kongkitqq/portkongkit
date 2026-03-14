@@ -6,11 +6,17 @@ const About = () => {
   const { t } = useTranslation();
   return (
     <section id="about" className="about-section">
-      <h2 className="aboutTitle">{t("about.title")}</h2>
+      <h2 className="aboutTitle" data-aos="fade-up">
+        {t("about.title")}
+      </h2>
 
       <div className="about-content-wrapper">
         <div className="about-container">
-          <div className="about-details">
+          <div
+            className="about-details"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <h3 className="about-heading">{t("about.personal")}</h3>
             <ul className="about-items">
               <li className="about-item">
@@ -33,7 +39,11 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="contact-info">
+          <div
+            className="contact-info"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <h3 className="about-heading">{t("about.contact")}</h3>
             <ul className="about-items">
               <li className="about-item">

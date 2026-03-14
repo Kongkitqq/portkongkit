@@ -8,11 +8,18 @@ const Experience = () => {
 
   return (
     <section className="experience-section">
-      <h2 className="experienceTitle">{t("experience.title")}</h2>
+      <h2 className="experienceTitle" data-aos="fade-up">
+        {t("experience.title")}
+      </h2>
       <div className="experience-container">
         {internships.length > 0 ? (
           internships.map((internship, index) => (
-            <div className="experience-card" key={index}>
+            <div
+              className="experience-card"
+              key={index}
+              data-aos="fade-up"
+              data-aos-delay={index * 100}
+            >
               {internship.type && (
                 <span className="experience-type-badge">{internship.type}</span>
               )}

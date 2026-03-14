@@ -6,11 +6,17 @@ export const Skills = () => {
   const { t } = useTranslation();
   return (
     <section id="skills" className="skills-section">
-      <h2 className="skillsTitle">{t("skills.title")}</h2>
+      <h2 className="skillsTitle" data-aos="fade-up">
+        {t("skills.title")}
+      </h2>
 
       <div className="skills-content-wrapper">
         <div className="skills-container">
-          <div className="skills-list">
+          <div
+            className="skills-list"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <h3 className="skills-heading">
               {t("skills.languagesFrameworks")}
             </h3>
@@ -27,7 +33,11 @@ export const Skills = () => {
             </ul>
           </div>
 
-          <div className="software-list">
+          <div
+            className="software-list"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <h3 className="skills-heading">{t("skills.mlAI")}</h3>
             <ul className="skills-items">
               <li className="skills-item">

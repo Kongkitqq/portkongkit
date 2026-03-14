@@ -1,12 +1,10 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-scroll";
 import { useTranslation } from "react-i18next";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faEnvelope,
   faPhone,
-  faArrowUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
