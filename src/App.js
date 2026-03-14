@@ -7,6 +7,8 @@ import Experience from "./components/Experience/experience";
 import ScrollToTopButton from "./components/ScrollToTopButton/ScrollToTopButton";
 import Project from "./components/project/project";
 
+import Footer from "./components/Footer/Footer";
+
 function App() {
   const [theme, setTheme] = useState("dark");
 
@@ -44,6 +46,7 @@ function App() {
         <Project />
       </section>
       <ScrollToTopButton />
+      <Footer />
     </div>
   );
 }

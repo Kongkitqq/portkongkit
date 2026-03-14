@@ -1,12 +1,13 @@
 .footer-section {
-    background: rgba(10, 10, 10, 0.95);
+    background: rgba(10, 10, 10, 0.85);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     border-top: 1px solid rgba(255, 255, 255, 0.05);
-    padding: 4rem 2rem 2rem;
+    padding: 2.5rem 2rem 1.5rem;
     color: var(--text-primary);
     position: relative;
     z-index: 10;
-    backdrop-filter: blur(10px);
-    margin-top: 4rem; /* Ensure space after the last section */
+    margin-top: 3rem; /* Ensure space after the last section */
 }
 
 .footer-container {
@@ -86,7 +87,7 @@
     justify-content: space-between;
     align-items: center;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 2rem;
+    padding-top: 1.5rem;
     font-size: 0.9rem;
     color: var(--text-muted);
 }
@@ -141,4 +142,15 @@
         gap: 1.5rem;
         text-align: center;
     }
+}
+
+.visitor-badge-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.visitor-badge-container:hover {
+    transform: scale(1.05);
 }

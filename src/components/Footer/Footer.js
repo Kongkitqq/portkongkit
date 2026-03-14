@@ -27,11 +27,11 @@ const Footer = () => {
             <h4>{t("footer.contactMe")}</h4>
             <div className="contact-item">
               <FontAwesomeIcon icon={faEnvelope} className="contact-icon" />
-              <a href="mailto:kongkit.y@psu.ac.th">kongkit.y@psu.ac.th</a>
+              <a href="mailto:kongkit.y@psu.ac.th">kongkit.ys@gmail.com</a>
             </div>
             <div className="contact-item">
               <FontAwesomeIcon icon={faPhone} className="contact-icon" />
-              <a href="tel:080-123-4567">080-123-4567</a>
+              <a href="tel:080-123-4567">088-784-8844</a>
             </div>
           </div>
 
@@ -54,17 +54,13 @@ const Footer = () => {
           <p>
             &copy; {currentYear} Kongkit Yeesai. {t("footer.rightsReserved")}
           </p>
-
-          <Link
-            to="home"
-            smooth={true}
-            duration={500}
-            offset={-80}
-            className="scroll-up-btn"
-            title={t("footer.scrolltoTop")}
-          >
-            <FontAwesomeIcon icon={faArrowUp} />
-          </Link>
+          <div className="visitor-badge-container">
+            <img
+              src="https://api.visitorbadge.io/api/visitors?path=https%3A%2F%2Fkongkitqq.github.io%2Fportkongkit&countColor=%23007bff"
+              alt="Visitor Counter"
+              style={{ height: "24px", opacity: 0.9 }}
+            />
+          </div>
         </div>
       </div>
     </footer>
